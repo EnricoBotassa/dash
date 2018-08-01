@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Zalgocoin Core
+Comment=Zalgocoin P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Zalgocoin peer-to-peer Netzwerk
+Comment[fr]=Zalgocoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Zalgocoin, eşten eşe kriptografik sanal para birimi
+Exec=zalgocoin-qt %u
+Terminal=false
+Type=Application
+Icon=zalgocoin128
+MimeType=x-scheme-handler/zalgocoin;
+Categories=Office;Finance;

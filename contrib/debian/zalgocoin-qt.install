@@ -1,0 +1,6 @@
+usr/local/bin/zalgocoin-qt usr/bin
+share/pixmaps/zalgocoin32.xpm usr/share/pixmaps
+share/pixmaps/zalgocoin16.xpm usr/share/pixmaps
+share/pixmaps/zalgocoin128.png usr/share/pixmaps
+debian/zalgocoin-qt.desktop usr/share/applications
+debian/zalgocoin-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/zalgocoin_bg.qm</file>
+        <file alias="de">locale/zalgocoin_de.qm</file>
+        <file alias="en">locale/zalgocoin_en.qm</file>
+        <file alias="es">locale/zalgocoin_es.qm</file>
+        <file alias="fi">locale/zalgocoin_fi.qm</file>
+        <file alias="fr">locale/zalgocoin_fr.qm</file>
+        <file alias="it">locale/zalgocoin_it.qm</file>
+        <file alias="ja">locale/zalgocoin_ja.qm</file>
+        <file alias="nl">locale/zalgocoin_nl.qm</file>
+        <file alias="pl">locale/zalgocoin_pl.qm</file>
+        <file alias="pt">locale/zalgocoin_pt.qm</file>
+        <file alias="ru">locale/zalgocoin_ru.qm</file>
+        <file alias="sk">locale/zalgocoin_sk.qm</file>
+        <file alias="sv">locale/zalgocoin_sv.qm</file>
+        <file alias="vi">locale/zalgocoin_vi.qm</file>
+        <file alias="zh_CN">locale/zalgocoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/zalgocoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,22 @@
+[Unit]
+Description=Zalgocoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=zalgocoincore
+Group=zalgocoincore
+
+Type=forking
+PIDFile=/var/lib/zalgocoind/zalgocoind.pid
+ExecStart=/usr/bin/zalgocoind -daemon -pid=/var/lib/zalgocoind/zalgocoind.pid \
+-conf=/etc/zalgocoincore/zalgocoin.conf -datadir=/var/lib/zalgocoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

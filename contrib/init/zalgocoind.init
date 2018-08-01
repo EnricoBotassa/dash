@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  zalgocoind The Zalgocoin Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: zalgocoind
+# processname: zalgocoind
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/zalgocoind, see below
+if [ -f /etc/sysconfig/zalgocoind ]; then
+        . /etc/sysconfig/zalgocoind
+fi
+
+RETVAL=0
+
+prog=zalgocoind
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/zalgocoind
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/zalgocoind}
+
+# zalgocoind defaults to /usr/bin/zalgocoind, override with BITCOIND_BIN
+zalgocoind=${BITCOIND_BIN-/usr/bin/zalgocoind}
+
+# zalgocoind opts default to -disablewallet, override with BITCOIND_OPTS
+zalgocoind_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $zalgocoind $zalgocoind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

@@ -32,7 +32,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the dash, gitian-builder, gitian.sigs, and dash-detached-sigs.
+Run this script from the directory containing the zalgocoin, gitian-builder, gitian.sigs, and zalgocoin-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -249,7 +249,7 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/dashpay/gitian.sigs.git
+    git clone https://github.com/enricobotassa/gitian.sigs.git
     git clone https://github.com/EnricoBotassa/zalgocoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
@@ -268,7 +268,7 @@ then
 fi
 
 # Set up build
-pushd ./dash
+pushd ./zalgocoin
 git fetch
 git checkout ${COMMIT}
 popd
@@ -277,7 +277,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./dashcore-binaries/${VERSION}
+	mkdir -p ./zalgocoincore-binaries/${VERSION}
 	
 	# Build Dependencies
 	echo ""
@@ -287,7 +287,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../dash/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../zalgocoin/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -295,9 +295,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit dash=${COMMIT} --url dash=${url} ../dash/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs/ ../dash/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/dashcore-*.tar.gz build/out/src/dashcore-*.tar.gz ../dashcore-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zalgocoin=${COMMIT} --url zalgocoin=${url} ../zalgocoin/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs/ ../zalgocoin/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/zalgocoincore-*.tar.gz build/out/src/zalgocoincore-*.tar.gz ../zalgocoincore-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -305,10 +305,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit dash=${COMMIT} --url dash=${url} ../dash/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../dash/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/dashcore-*-win-unsigned.tar.gz inputs/dashcore-win-unsigned.tar.gz
-	    mv build/out/dashcore-*.zip build/out/dashcore-*.exe ../dashcore-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zalgocoin=${COMMIT} --url zalgocoin=${url} ../zalgocoin/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../zalgocoin/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/zalgocoincore-*-win-unsigned.tar.gz inputs/zalgocoincore-win-unsigned.tar.gz
+	    mv build/out/zalgocoincore-*.zip build/out/zalgocoincore-*.exe ../zalgocoincore-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -316,10 +316,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit dash=${COMMIT} --url dash=${url} ../dash/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../dash/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/dashcore-*-osx-unsigned.tar.gz inputs/dashcore-osx-unsigned.tar.gz
-	    mv build/out/dashcore-*.tar.gz build/out/dashcore-*.dmg ../dashcore-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit zalgocoin=${COMMIT} --url zalgocoin=${url} ../zalgocoin/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../zalgocoin/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/zalgocoincore-*-osx-unsigned.tar.gz inputs/zalgocoincore-osx-unsigned.tar.gz
+	    mv build/out/zalgocoincore-*.tar.gz build/out/zalgocoincore-*.dmg ../zalgocoincore-binaries/${VERSION}
 	fi
 	popd
 
@@ -346,27 +346,27 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../dash/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../zalgocoin/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../dash/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../zalgocoin/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX	
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""	
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../dash/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../zalgocoin/contrib/gitian-descriptors/gitian-osx.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../dash/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../zalgocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../dash/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../zalgocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -381,10 +381,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../dash/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../dash/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/dashcore-*win64-setup.exe ../dashcore-binaries/${VERSION}
-	    mv build/out/dashcore-*win32-setup.exe ../dashcore-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../zalgocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../zalgocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/zalgocoincore-*win64-setup.exe ../zalgocoincore-binaries/${VERSION}
+	    mv build/out/zalgocoincore-*win32-setup.exe ../zalgocoincore-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -392,9 +392,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../dash/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../dash/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/dashcore-osx-signed.dmg ../dashcore-binaries/${VERSION}/dashcore-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../zalgocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p "$signProg" --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../zalgocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/zalgocoincore-osx-signed.dmg ../zalgocoincore-binaries/${VERSION}/zalgocoincore-${VERSION}-osx.dmg
 	fi
 	popd
 

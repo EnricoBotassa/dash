@@ -1,0 +1,33 @@
+# /etc/conf.d/zalgocoind: config file for /etc/init.d/zalgocoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/zalgocoincore/zalgocoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/zalgocoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/zalgocoind.pid"
+
+# Where to write zalgocoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/zalgocoind"
+
+# User and group to own zalgocoind process
+#BITCOIND_USER="zalgocoincore"
+#BITCOIND_GROUP="zalgocoincore"
+
+# Path to zalgocoind executable
+#BITCOIND_BIN="/usr/bin/zalgocoind"
+
+# Nice value to run zalgocoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

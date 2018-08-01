@@ -143,7 +143,7 @@ public:
 };
 
 /**
- * Dash RPC command dispatcher.
+ * Zalgocoin RPC command dispatcher.
  */
 class CRPCTable
 {
