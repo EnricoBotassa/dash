@@ -1,8 +1,6 @@
 Zalgocoin Core staging tree 0.12.3
 ===============================
-
 `master:` [![Build Status](https://travis-ci.org/enricobotassa/zalgocoin.svg?branch=master)](https://travis-ci.org/enricobotassa/zalgocoin) `develop:` [![Build Status](https://travis-ci.org/enricobotassa/zalgocoin.svg?branch=develop)](https://travis-ci.org/enricobotassa/zalgocoin/branches)
-
 https://www.zalgocoin.org
 
 
