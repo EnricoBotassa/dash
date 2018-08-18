@@ -1,0 +1,949 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\blob">
+      <UniqueIdentifier>{9ba21d9f-4a15-4ed2-8820-e32000dceffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\btree">
+      <UniqueIdentifier>{907b748f-e8f9-4004-bfea-688bff618629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\db">
+      <UniqueIdentifier>{9523bbf6-d76d-4e6b-b656-092d57f8f641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lang">
+      <UniqueIdentifier>{5b834660-2b3d-400f-b3c6-6fae9dbb58aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lang\cxx">
+      <UniqueIdentifier>{23967b80-95d8-456b-b6b8-401a97adfe34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\common">
+      <UniqueIdentifier>{bc927c1c-5ff1-43fc-8bf7-6fbd65274604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lang\dbm">
+      <UniqueIdentifier>{057387b6-1d71-4753-9df8-feb22bd29c5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\dbreg">
+      <UniqueIdentifier>{873205e5-5b78-4de0-bda5-85628dc66246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\env">
+      <UniqueIdentifier>{781ccecb-53ef-45ef-859f-4981b293c3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\fileops">
+      <UniqueIdentifier>{6ceb7521-9470-404d-83da-35b0c49c9482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\hash">
+      <UniqueIdentifier>{68a1f462-9066-4dac-92af-703be68abc4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\heap">
+      <UniqueIdentifier>{f3df0b84-bef3-4479-9baf-7e7189f4958f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\hmac">
+      <UniqueIdentifier>{6d607e7c-0712-46d3-9f55-4521cf57f2e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lang\hsearch">
+      <UniqueIdentifier>{9f21e68f-dad4-4368-b284-1cb54b194e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\clib">
+      <UniqueIdentifier>{3aa8c026-f34a-482b-ab30-71f12390716a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\lock">
+      <UniqueIdentifier>{558eb7b3-a178-4aa3-93b5-29d7eefd0ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\log">
+      <UniqueIdentifier>{5a73b0a2-ce00-4b24-84e2-5fb4bf89c939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\mp">
+      <UniqueIdentifier>{45e3681a-2ae7-4bd5-8f27-3df6b51db789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\crypto">
+      <UniqueIdentifier>{51888faa-a577-4302-bd75-557666fa3096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\crypto\mersenne">
+      <UniqueIdentifier>{18009793-02a9-4244-9e42-02c911ac0b1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\crypto\rijndael">
+      <UniqueIdentifier>{4cac2056-1620-4461-9ccd-7e12b0c4f2b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\mutex">
+      <UniqueIdentifier>{5851ab0f-6afd-4251-bc85-b05946da76b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\os">
+      <UniqueIdentifier>{0374456a-dd13-41aa-b56c-2846352563b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\os_windows">
+      <UniqueIdentifier>{f4f9c3c4-76ec-422d-ad2b-881ba07e59d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\qam">
+      <UniqueIdentifier>{d22279aa-30f3-4366-b82a-57f3711122fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\rep">
+      <UniqueIdentifier>{8511d807-8c4b-4ef2-9849-5b1da7ddf351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\repmgr">
+      <UniqueIdentifier>{e347d7f6-f4a4-4fac-8ab4-bf8df15b9be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sequence">
+      <UniqueIdentifier>{3d5ce5a0-2cc2-4f26-8131-9138ecd57907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\txn">
+      <UniqueIdentifier>{c8979a5b-af09-40d8-9691-652171bb4041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\xa">
+      <UniqueIdentifier>{0bf97223-2915-4be8-a400-d4718d29cb26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\blob\blob_fileops.c">
+      <Filter>Исходные файлы\blob</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blob\blob_page.c">
+      <Filter>Исходные файлы\blob</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blob\blob_stream.c">
+      <Filter>Исходные файлы\blob</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blob\blob_util.c">
+      <Filter>Исходные файлы\blob</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_compact.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_compare.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_compress.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_conv.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_curadj.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_cursor.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_delete.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_method.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_open.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_put.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_rec.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_reclaim.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_recno.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_rsearch.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_search.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_split.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_stat.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_upgrade.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\bt_verify.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btree\btree_auto.c">
+      <Filter>Исходные файлы\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\crdel_auto.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\crdel_rec.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_am.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_auto.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_backup.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_cam.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_cds.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_compact.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_conv.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_copy.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_dispatch.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_dup.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_iface.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_join.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_meta.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_method.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_open.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_overflow.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_ovfl_vrfy.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_pr.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_rec.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_reclaim.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_remove.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_rename.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_ret.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_setid.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_setlsn.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_slice.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_sort_multiple.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_stati.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_truncate.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_upg.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_upg_opd.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_vrfy.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\db_vrfyutil.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\partition.c">
+      <Filter>Исходные файлы\db</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_channel.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_db.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_dbc.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_dbstream.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_dbt.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_env.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_except.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_lock.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_logc.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_mpool.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_multi.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_seq.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_site.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\cxx\cxx_txn.cpp">
+      <Filter>Исходные файлы\lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\clock.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\db_byteorder.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\db_compint.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\db_err.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\db_getlong.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\db_idspace.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\db_log2.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\db_shash.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\dbt.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\mkpath.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\openflags.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\os_method.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\util_arg.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\util_cache.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\util_env.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\util_log.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\util_sig.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\util_ver_check.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\zerofill.c">
+      <Filter>Исходные файлы\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\dbm\dbm.c">
+      <Filter>Исходные файлы\lang\dbm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbreg\dbreg.c">
+      <Filter>Исходные файлы\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbreg\dbreg_auto.c">
+      <Filter>Исходные файлы\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbreg\dbreg_rec.c">
+      <Filter>Исходные файлы\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbreg\dbreg_stat.c">
+      <Filter>Исходные файлы\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbreg\dbreg_util.c">
+      <Filter>Исходные файлы\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_alloc.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_backup.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_config.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_failchk.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_file.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_globals.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_method.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_name.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_open.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_recover.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_region.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_register.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_sig.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_slice.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\env\env_stat.c">
+      <Filter>Исходные файлы\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fileops\fileops_auto.c">
+      <Filter>Исходные файлы\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fileops\fop_basic.c">
+      <Filter>Исходные файлы\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fileops\fop_rec.c">
+      <Filter>Исходные файлы\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fileops\fop_util.c">
+      <Filter>Исходные файлы\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_auto.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_compact.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_conv.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_dup.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_func.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_meta.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_method.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_open.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_page.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_rec.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_reclaim.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_stat.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_upgrade.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash\hash_verify.c">
+      <Filter>Исходные файлы\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_auto.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_backup.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_conv.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_method.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_open.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_rec.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_reclaim.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_stat.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_upgrade.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heap\heap_verify.c">
+      <Filter>Исходные файлы\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmac\hmac.c">
+      <Filter>Исходные файлы\hmac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmac\sha1.c">
+      <Filter>Исходные файлы\hmac</Filter>
+    </ClCompile>
+    <ClCompile Include="lang\hsearch\hsearch.c">
+      <Filter>Исходные файлы\lang\hsearch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\clib\isalpha.c">
+      <Filter>Исходные файлы\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\clib\strsep.c">
+      <Filter>Исходные файлы\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_deadlock.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_failchk.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_id.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_list.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_method.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_region.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_stat.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_timer.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\lock_util.c">
+      <Filter>Исходные файлы\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_archive.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_compare.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_debug.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_get.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_method.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_print.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_put.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_stat.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_verify.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_verify_auto.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_verify_int.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\log_verify_util.c">
+      <Filter>Исходные файлы\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_alloc.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_backup.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_bh.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_fget.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_fmethod.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_fopen.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_fput.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_fset.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_method.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_mvcc.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_region.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_register.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_resize.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_stat.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_sync.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp\mp_trickle.c">
+      <Filter>Исходные файлы\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\aes_method.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\crypto.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\mersenne\mt19937db.c">
+      <Filter>Исходные файлы\crypto\mersenne</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rijndael\rijndael-alg-fst.c">
+      <Filter>Исходные файлы\crypto\rijndael</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\rijndael\rijndael-api-fst.c">
+      <Filter>Исходные файлы\crypto\rijndael</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex\mut_alloc.c">
+      <Filter>Исходные файлы\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex\mut_failchk.c">
+      <Filter>Исходные файлы\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex\mut_method.c">
+      <Filter>Исходные файлы\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex\mut_region.c">
+      <Filter>Исходные файлы\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex\mut_stat.c">
+      <Filter>Исходные файлы\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex\mut_win32.c">
+      <Filter>Исходные файлы\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_abort.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_addrinfo.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_alloc.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_path.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_pid.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_root.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_rpath.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_stack.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_tmpdir.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_uid.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_abs.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_clock.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_config.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_cpu.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_dir.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_errno.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_fid.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_flock.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_fsync.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_getenv.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_handle.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_map.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_mkdir.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_open.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_rename.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_rmdir.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_rw.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_seek.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_stat.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_truncate.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_unlink.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os_windows\os_yield.c">
+      <Filter>Исходные файлы\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_auto.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_conv.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_files.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_method.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_open.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_rec.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_stat.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_upgrade.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qam\qam_verify.c">
+      <Filter>Исходные файлы\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_automsg.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_backup.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_elect.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_lease.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_log.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_method.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_record.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_region.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_stat.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_util.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rep\rep_verify.c">
+      <Filter>Исходные файлы\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_auto.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_automsg.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_elect.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_method.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_msg.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_net.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_queue.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_rec.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_sel.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_stat.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_util.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\repmgr\repmgr_windows.c">
+      <Filter>Исходные файлы\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sequence\seq_stat.c">
+      <Filter>Исходные файлы\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sequence\sequence.c">
+      <Filter>Исходные файлы\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_auto.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_chkpt.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_failchk.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_method.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_rec.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_recover.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_region.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_stat.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\txn\txn_util.c">
+      <Filter>Исходные файлы\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xa\xa.c">
+      <Filter>Исходные файлы\xa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xa\xa_map.c">
+      <Filter>Исходные файлы\xa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\os_ctime.c">
+      <Filter>Исходные файлы\os</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

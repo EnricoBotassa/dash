@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\event2">
+      <UniqueIdentifier>{77ab1987-7918-497c-8d59-3b6a63a7c0a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\buffer.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\buffer_iocp.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bufferevent.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bufferevent_async.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bufferevent_filter.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bufferevent_openssl.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bufferevent_pair.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bufferevent_ratelim.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bufferevent_sock.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evdns.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event_iocp.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event_tagging.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evmap.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evrpc.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evthread.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evthread_win32.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evutil.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evutil_rand.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evutil_time.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\listener.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\signal.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strlcpy.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32select.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\evdns.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="include\evhttp.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="include\evrpc.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="include\evutil.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\buffer.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\buffer_compat.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\bufferevent.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\bufferevent_compat.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\bufferevent_ssl.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\bufferevent_struct.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\dns.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\dns_compat.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\dns_struct.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\event.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\event_compat.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\event_struct.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\http.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\http_compat.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\http_struct.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\keyvalq_struct.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\listener.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\rpc.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\rpc_compat.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\rpc_struct.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\tag.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\tag_compat.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\thread.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\util.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\visibility.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\evconfig-private.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event2\event-config.h">
+      <Filter>Файлы заголовков\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bufferevent-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\changelist-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\defer-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\epolltable-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\evbuffer-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\evmap-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\evrpc-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\evsignal-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\evthread-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ht-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iocp-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ipv6-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kqueue-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\log-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\minheap-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mm-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\openssl-compat.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ratelim-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strlcpy-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\time-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util-internal.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
