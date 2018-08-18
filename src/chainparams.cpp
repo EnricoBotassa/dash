@@ -228,7 +228,7 @@ public:
 
         strSporkAddress = "Xgtyuk76vhuFW2iT7UAiHgNdWXCf3J34wh";
 
-        checkpointData = (CCheckpointData) {
+        checkpointData = CCheckpointData {
             boost::assign::map_list_of
             (  0, uint256S("0x000001242775c6ddf87ec674c19da760a12545506dc5dea64749711bbf833cde"))
         };
@@ -353,7 +353,7 @@ public:
 
         strSporkAddress = "yjPtiKh2uwk3bDutTEA2q9mCtXyiZRWn55";
 
-        checkpointData = (CCheckpointData) {
+        checkpointData = CCheckpointData {
             boost::assign::map_list_of
             (    0, uint256S("0x00000963bb521f51f5b205c3663fa91fceef1b00e8f27c3100f1507145486c91"))
         };
@@ -479,7 +479,7 @@ public:
 
         strSporkAddress = "yjPtiKh2uwk3bDutTEA2q9mCtXyiZRWn55";
 
-        checkpointData = (CCheckpointData) {
+        checkpointData = CCheckpointData {
             boost::assign::map_list_of
             (      0, uint256S("00000963bb521f51f5b205c3663fa91fceef1b00e8f27c3100f1507145486c91"))
             (      1, devnetGenesis.GetHash())
@@ -577,7 +577,7 @@ public:
         // privKey: cP4EKFyJsHT39LDqgdcB43Y3YXjNyjb5Fuas1GQSeAtjnZWmZEQK
         strSporkAddress = "yj949n1UH6fDhw6HtVE5VMj2iSTaSWBMcW";
 
-        checkpointData = (CCheckpointData){
+        checkpointData = CCheckpointData{
             boost::assign::map_list_of
             ( 0, uint256S("0x00000963bb521f51f5b205c3663fa91fceef1b00e8f27c3100f1507145486c91"))
         };
