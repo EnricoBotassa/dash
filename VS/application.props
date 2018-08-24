@@ -15,7 +15,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HAVE_CONFIG_H;_SCL_SECURE_NO_WARNINGS;WIN32;_CONSOLE;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)VS\$(ProjectName)\%(RelativeDir)</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <!--ProgramDataBaseFileName>$(IntDir)VS\$(ProjectName)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName-->
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
