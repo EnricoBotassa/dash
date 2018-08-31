@@ -1,3 +1,11 @@
+**/bin/
+**/obj/
+**/.vs/
+**/packages/
+*.suo
+*.user
+StyleCop.Cache
+
 *.sublime-project
 *.sublime-workspace
 todo.txt
