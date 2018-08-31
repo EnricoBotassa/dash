@@ -89,35 +89,19 @@ namespace GenesisBlockInfoGen
             DashEC.FullSignatureTest(hash);*/
             //SecP256r1_Test();
             //Console.ReadKey();
+            var keyPair = DashEC.SecP256r1KeyPairGen();
 
-            string inputStr = "Fucking in the bushes";
+            Console.WriteLine("################################ ZALGOCOIN MAIN CHAIN ##################################");
+            BlockSolver s = new BlockSolver(
+                keyPair.PubKeyByteHexStr, // pubkey
+                "It's ZalgoCoin time! He comes. 01/08/2018", // timestamp
+                1535788800, // timestamp bits
+                0, // nBits
+                0, // nTime
+                0, // nNonce
+                2); // threads
 
-            var rnd = new Random();
-            var input = Encoding.UTF8.GetBytes(inputStr);
-
-            Console.WriteLine($"InputLine ({input.Length} bytes):");
-            Console.WriteLine($"    {Encoding.UTF8.GetString(input)}");
-
-            var hashFuncs = new List<IHash>();
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlake512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlueMidnightWish512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateGroestl512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSkein512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateJH512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateKeccak512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateLuffa512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateCubeHash512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSHAvite3_512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSIMD512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateEcho512());
-
-            foreach(var hashFunc in hashFuncs)
-            {
-                Console.WriteLine($"Aplied {hashFunc.Name} hash function:");
-                var transform = hashFunc.ComputeBytes(input);
-                input = transform.GetBytes();
-                Console.WriteLine($"    {Utilities.ToSolidHex(input)}");
-            }
+            s.Solve();
 
             Console.ReadKey();
         }

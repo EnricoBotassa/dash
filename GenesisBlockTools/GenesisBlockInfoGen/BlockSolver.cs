@@ -194,6 +194,7 @@ namespace GenesisBlockInfoGen
 
                 // Get the hash of the block
                 byte[] hash = Utilities.Hash(headerBlock);
+                //byte[] hash = Utilities.Hash(headerBlock);
 
                 // Check debug check - run one job
                 //				if (jobMutex.WaitOne ()) {

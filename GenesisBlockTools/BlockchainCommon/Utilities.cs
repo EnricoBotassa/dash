@@ -148,6 +148,7 @@ namespace GenesisBlockInfoGen
 
         #endregion
 
+        #region X11 Hashing 
         public static byte[] HashX11(params byte[][] bytes)
         {
             // Join all the byte arrays
@@ -180,9 +181,10 @@ namespace GenesisBlockInfoGen
 
             return hash;
         }
+        #endregion
 
         #region Double Hashing 
-        public static byte[] Hash(params byte[][] bytes)
+        public static byte[] HashSHA256(params byte[][] bytes)
         {
 
             SHA256 crypto = SHA256Managed.Create();
@@ -204,6 +206,10 @@ namespace GenesisBlockInfoGen
             return hash2;
         }
 
+        public static byte[] Hash(params byte[][] bytes)
+        {
+            return HashX11(bytes);
+        }
 
         public static BigInteger HashAsBigInteger(params byte[][] bytes)
         {
