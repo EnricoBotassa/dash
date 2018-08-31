@@ -13,6 +13,7 @@ using Org.BouncyCastle.Crypto.Generators;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.X509;
 using Org.BouncyCastle.Pkcs;
+using HashLib;
 
 namespace GenesisBlockInfoGen
 {
@@ -62,30 +63,20 @@ namespace GenesisBlockInfoGen
             var privKeyBytes = privateKey.D.ToByteArrayUnsigned();
             var pubKeyBytes = publicKey.Q.GetEncoded();
 
-            string privKey = ToSolidHex(privKeyBytes);
-            string pubKey = ToSolidHex(pubKeyBytes);
+            string privKey = Utilities.ToSolidHex(privKeyBytes);
+            string pubKey = Utilities.ToSolidHex(pubKeyBytes);
 
             Console.WriteLine($"Curve: {curve}");
             Console.WriteLine($"Generated private key ({privKeyBytes.Length} bytes):");
-            Console.WriteLine($"{ToHex(privKeyBytes)}");
+            Console.WriteLine($"{Utilities.ToHex(privKeyBytes)}");
             Console.WriteLine($"Generated public key ({pubKeyBytes.Length} bytes):");
-            Console.WriteLine($"{ToHex(pubKeyBytes)}");
+            Console.WriteLine($"{Utilities.ToHex(pubKeyBytes)}");
             Console.WriteLine("=====================================");
             Console.WriteLine($"priv:");
-            Console.WriteLine($"{ToSolidHex(privKeyBytes)}");
+            Console.WriteLine($"{Utilities.ToSolidHex(privKeyBytes)}");
             Console.WriteLine($"pub:");
-            Console.WriteLine($"{ToSolidHex(pubKeyBytes)}");
+            Console.WriteLine($"{Utilities.ToSolidHex(pubKeyBytes)}");
 
-        }
-
-        public static string ToHex(byte[] data)
-        {
-            return BitConverter.ToString(data).Replace("-", ":");
-        }
-
-        public static string ToSolidHex(byte[] data)
-        {
-            return BitConverter.ToString(data).Replace("-", "");
         }
 
         static void Main(string[] args)
@@ -96,7 +87,38 @@ namespace GenesisBlockInfoGen
             byte[] hash = sha256.ComputeHash(Encoding.UTF8.GetBytes(msg), 0, Encoding.UTF8.GetByteCount(msg));
 
             DashEC.FullSignatureTest(hash);*/
-            SecP256r1_Test();
+            //SecP256r1_Test();
+            //Console.ReadKey();
+
+            string inputStr = "Fucking in the bushes";
+
+            var rnd = new Random();
+            var input = Encoding.UTF8.GetBytes(inputStr);
+
+            Console.WriteLine($"InputLine ({input.Length} bytes):");
+            Console.WriteLine($"    {Encoding.UTF8.GetString(input)}");
+
+            var hashFuncs = new List<IHash>();
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlake512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlueMidnightWish512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateGroestl512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSkein512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateJH512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateKeccak512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateLuffa512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateCubeHash512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSHAvite3_512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSIMD512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateEcho512());
+
+            foreach(var hashFunc in hashFuncs)
+            {
+                Console.WriteLine($"Aplied {hashFunc.Name} hash function:");
+                var transform = hashFunc.ComputeBytes(input);
+                input = transform.GetBytes();
+                Console.WriteLine($"    {Utilities.ToSolidHex(input)}");
+            }
+
             Console.ReadKey();
         }
     }

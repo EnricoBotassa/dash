@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HashLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -147,10 +148,43 @@ namespace GenesisBlockInfoGen
 
         #endregion
 
-        #region Double Hashing 
+        public static byte[] HashX11(params byte[][] bytes)
+        {
+            // Join all the byte arrays
+            List<byte> totalBytes = new List<byte>();
+            foreach (byte[] b in bytes)
+            {
+                totalBytes.AddRange(b);
+            }
 
+            byte[] hash = totalBytes.ToArray();
+
+            var hashFuncs = new List<IHash>();
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlake512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlueMidnightWish512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateGroestl512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSkein512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateJH512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateKeccak512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateLuffa512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateCubeHash512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSHAvite3_512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSIMD512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateEcho512());
+
+            foreach (var hashFunc in hashFuncs)
+            {
+                var transform = hashFunc.ComputeBytes(hash);
+                hash = transform.GetBytes();
+            }
+
+            return hash;
+        }
+
+        #region Double Hashing 
         public static byte[] Hash(params byte[][] bytes)
         {
+
             SHA256 crypto = SHA256Managed.Create();
 
             // Join all the byte arrays
@@ -279,6 +313,16 @@ namespace GenesisBlockInfoGen
             //			Console.WriteLine ($"Result: {result} {Utilities.GetBytesString (result.ToByteArray (), false)}");
 
             return result;
+        }
+
+        public static string ToHex(byte[] data)
+        {
+            return BitConverter.ToString(data).Replace("-", ":");
+        }
+
+        public static string ToSolidHex(byte[] data)
+        {
+            return BitConverter.ToString(data).Replace("-", "");
         }
     }
 }
