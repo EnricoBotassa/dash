@@ -74,7 +74,6 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
     <Linkage-libzmq>static</Linkage-libzmq>
     <Linkage-secp256k1>static</Linkage-secp256k1>
     <Linkage-grpc_dependencies_openssl>static</Linkage-grpc_dependencies_openssl>
@@ -83,7 +82,6 @@
     <CallingConvention-grpc_dependencies_zlib>stdcall</CallingConvention-grpc_dependencies_zlib>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncremental>
     <Linkage-libzmq>static</Linkage-libzmq>
     <Linkage-secp256k1>static</Linkage-secp256k1>
     <Linkage-grpc_dependencies_openssl>static</Linkage-grpc_dependencies_openssl>
@@ -92,7 +90,6 @@
     <CallingConvention-grpc_dependencies_zlib>stdcall</CallingConvention-grpc_dependencies_zlib>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkIncremental>false</LinkIncremental>
     <Linkage-libzmq>static</Linkage-libzmq>
     <Linkage-secp256k1>static</Linkage-secp256k1>
     <Linkage-grpc_dependencies_openssl>static</Linkage-grpc_dependencies_openssl>
@@ -101,7 +98,6 @@
     <CallingConvention-grpc_dependencies_zlib>stdcall</CallingConvention-grpc_dependencies_zlib>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
     <Linkage-libzmq>static</Linkage-libzmq>
     <Linkage-secp256k1>static</Linkage-secp256k1>
     <Linkage-grpc_dependencies_openssl>static</Linkage-grpc_dependencies_openssl>
@@ -114,12 +110,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

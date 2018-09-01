@@ -142,6 +142,7 @@
       <AdditionalIncludeDirectories>..\..\src\leveldb;..\..\src\leveldb\include</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4996 %(AdditionalOptions)</AdditionalOptions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -160,6 +161,7 @@
       <AdditionalIncludeDirectories>..\..\src\leveldb;..\..\src\leveldb\include</AdditionalIncludeDirectories>
       <AdditionalOptions>/wd4996 %(AdditionalOptions)</AdditionalOptions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
