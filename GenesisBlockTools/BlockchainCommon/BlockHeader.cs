@@ -73,16 +73,16 @@ namespace GenesisBlockInfoGen
             Debug.Assert(buffer.Count == 36, "hashPrevBlock not 32 bytes");
 
             buffer.AddRange(Utilities.BigInt256ToBytes(hashMerkleRoot));
-            Debug.Assert(buffer.Count == 100, "hashMerkleRoot not 64 bytes");
+            Debug.Assert(buffer.Count == 68, "hashMerkleRoot not 32 bytes");
 
             buffer.AddRange(BitConverter.GetBytes(nTime));
-            Debug.Assert(buffer.Count == 104, "nTime not 4 bytes");
+            Debug.Assert(buffer.Count == 72, "nTime not 4 bytes");
 
             buffer.AddRange(BitConverter.GetBytes(nBits));
-            Debug.Assert(buffer.Count == 108, "nBits not 4 bytes");
+            Debug.Assert(buffer.Count == 76, "nBits not 4 bytes");
 
             buffer.AddRange(BitConverter.GetBytes(nNonce));
-            Debug.Assert(buffer.Count == 112, "nNonce not 4 bytes");
+            Debug.Assert(buffer.Count == 80, "nNonce not 4 bytes");
 
             return buffer.ToArray();
         }

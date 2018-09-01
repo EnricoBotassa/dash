@@ -99,7 +99,7 @@ namespace GenesisBlockInfoGen
                 0, // nBits
                 0, // nTime
                 0, // nNonce
-                2); // threads
+                3); // threads
 
             s.Solve();
 
