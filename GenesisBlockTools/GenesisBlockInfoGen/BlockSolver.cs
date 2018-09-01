@@ -31,9 +31,11 @@ namespace GenesisBlockInfoGen
             txNew.vout.Add(new TxOut());
 
             txNew.vin[0].scriptSig = new Script();
-            txNew.vin[0].scriptSig += timestampBits;
+            txNew.vin[0].scriptSig += /*0x04ffff001d0104;*/timestampBits;
             txNew.vin[0].scriptSig += new BigInteger(4);
             txNew.vin[0].scriptSig += timestamp;
+
+            var insc = Utilities.GetBytesString(txNew.vin[0].scriptSig.Buffer);
 
             txNew.vout[0].nValue = 50 * Utilities.COIN;
             txNew.vout[0].scriptPubKey = new Script();
@@ -42,6 +44,7 @@ namespace GenesisBlockInfoGen
 
             genesis.vtx.Add(txNew);
             genesis.hashPrevBlock = 0;
+            Console.WriteLine($"Merkle root int: {genesis.BuildMerkleTree()}");
             Console.WriteLine($"Merkle root: {Utilities.GetBytesString(genesis.BuildMerkleTree().ToByteArray(), false)}");
             Console.WriteLine($"Merkle swap: {Utilities.GetBytesString(Utilities.ByteSwap(genesis.BuildMerkleTree().ToByteArray()), false)}");
 
@@ -60,6 +63,12 @@ namespace GenesisBlockInfoGen
             Console.WriteLine();
             genesis.hashMerkleRoot = genesis.BuildMerkleTree();
 
+            var mrb = Utilities.BigInt256ToBytes(genesis.hashMerkleRoot);
+            var mr = Utilities.GetBytesString(mrb, false);
+
+            // real merkle root
+            //60f0c9fc3f4e65879bbb2388bff0540cdd3f9dd2ef6c08e6e043376cdc338e1a
+
             genesis.nVersion = 1;
             genesis.nBits = nBits;
 
@@ -67,7 +76,7 @@ namespace GenesisBlockInfoGen
             time = startTime;
             nonce = startNonce;
 
-            genesis.nTime = time == 0 ? Utilities.GetCurrentTimestamp() : time;
+            genesis.nTime = timestampBits;// time == 0 ? Utilities.GetCurrentTimestamp() : time;
             genesis.nNonce = nonce;
 
             jobMutex = new Mutex();
@@ -218,6 +227,9 @@ namespace GenesisBlockInfoGen
 
                 // Check the hash against the nBits difficulty target
                 BigInteger hashVal = Utilities.BytesToBigInteger(hash, true);
+                //Console.WriteLine($"Nonce = {nonce}; Hash = {hashVal}");
+                // Nonce = 0; Hash = 19326981056617863134880086773070629952806055677845660736366947971517608913709
+                //Thread.Sleep(1000);
 
                 // Check if we have the winning block
                 if (hashVal < difficulty)

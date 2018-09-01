@@ -89,17 +89,18 @@ namespace GenesisBlockInfoGen
             DashEC.FullSignatureTest(hash);*/
             //SecP256r1_Test();
             //Console.ReadKey();
-            var keyPair = DashEC.SecP256r1KeyPairGen();
+            //var keyPair = DashEC.SecP256r1KeyPairGen();
 
             Console.WriteLine("################################ ZALGOCOIN MAIN CHAIN ##################################");
             BlockSolver s = new BlockSolver(
-                keyPair.PubKeyByteHexStr, // pubkey
-                "It's ZalgoCoin time! He comes. 01/08/2018", // timestamp
+                "048C5702648E9C7FF4FB64AFFAE1E3CE7150BB73FD66232AF229EC29EA8D2568817870C1E24E2BF58410DCD72BA7B3FC1AAAB2B88E58B2D595405A0D5AAE8B03E8",
+                //keyPair.PubKeyByteHexStr, // pubkey
+                "It's ZalgoCoin time! He comes. 01/10/2018", // timestamp
                 1535788800, // timestamp bits
                 0, // nBits
                 0, // nTime
                 0, // nNonce
-                3); // threads
+                1); // threads
 
             s.Solve();
 
