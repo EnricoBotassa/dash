@@ -44,6 +44,15 @@ namespace GenesisBlockInfoGen
             genesis.hashPrevBlock = 0;
             Console.WriteLine($"Merkle root: {Utilities.GetBytesString(genesis.BuildMerkleTree().ToByteArray(), false)}");
             Console.WriteLine($"Merkle swap: {Utilities.GetBytesString(Utilities.ByteSwap(genesis.BuildMerkleTree().ToByteArray()), false)}");
+
+            if(nBits == 0)
+            {
+                // X11
+                nBits = 0x1e0ffff0;
+                // SHA256
+                //nBits = 0x1d00ffff;
+            }
+
             BigInteger diff = Utilities.GetBigIntegerFromCompact(nBits);
             Console.WriteLine();
             Console.WriteLine($"Target: {diff}");
@@ -194,6 +203,7 @@ namespace GenesisBlockInfoGen
 
                 // Get the hash of the block
                 byte[] hash = Utilities.Hash(headerBlock);
+                //byte[] hash = Utilities.Hash(headerBlock);
 
                 // Check debug check - run one job
                 //				if (jobMutex.WaitOne ()) {

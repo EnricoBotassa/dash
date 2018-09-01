@@ -35,6 +35,33 @@ namespace GenesisBlockInfoGen
             return SerializeHeader();
         }
 
+        /*
+        public byte[] SerializeHeader()
+        {
+            List<byte> buffer = new List<byte>();
+
+            buffer.AddRange(BitConverter.GetBytes(nVersion));
+            Debug.Assert(buffer.Count == 4, "version not 4 bytes");
+
+            buffer.AddRange(Utilities.BigInt256ToBytes(hashPrevBlock));
+            Debug.Assert(buffer.Count == 36, "hashPrevBlock not 32 bytes");
+
+            buffer.AddRange(Utilities.BigInt256ToBytes(hashMerkleRoot));
+            Debug.Assert(buffer.Count == 68, "hashMerkleRoot not 32 bytes");
+
+            buffer.AddRange(BitConverter.GetBytes(nTime));
+            Debug.Assert(buffer.Count == 72, "nTime not 4 bytes");
+
+            buffer.AddRange(BitConverter.GetBytes(nBits));
+            Debug.Assert(buffer.Count == 76, "nBits not 4 bytes");
+
+            buffer.AddRange(BitConverter.GetBytes(nNonce));
+            Debug.Assert(buffer.Count == 80, "nNonce not 4 bytes");
+
+            return buffer.ToArray();
+        }*/
+
+        
         public byte[] SerializeHeader()
         {
             List<byte> buffer = new List<byte>();
@@ -59,7 +86,6 @@ namespace GenesisBlockInfoGen
 
             return buffer.ToArray();
         }
-
         #endregion
 
         public byte[] GetHash()

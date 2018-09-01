@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HashLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -147,10 +148,86 @@ namespace GenesisBlockInfoGen
 
         #endregion
 
-        #region Double Hashing 
-
-        public static byte[] Hash(params byte[][] bytes)
+        #region X11bet Hashing 
+        public static byte[] HashX11bet(params byte[][] bytes)
         {
+            // Join all the byte arrays
+            List<byte> totalBytes = new List<byte>();
+            foreach (byte[] b in bytes)
+            {
+                totalBytes.AddRange(b);
+            }
+
+            byte[] hash = totalBytes.ToArray();
+
+            var hashFuncs = new List<IHash>();
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlake512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlueMidnightWish512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSkein512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateJH512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateKeccak512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateLuffa512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateCubeHash512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateGroestl512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSHAvite3_512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSIMD512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateEcho512());
+
+            foreach (var hashFunc in hashFuncs)
+            {
+                var transform = hashFunc.ComputeBytes(hash);
+                hash = transform.GetBytes();
+            }
+
+            var hash32 = new byte[32];
+            Array.Copy(hash, hash32, 32);
+
+            return hash32;
+        }
+        #endregion
+
+        #region X11 Hashing 
+        public static byte[] HashX11(params byte[][] bytes)
+        {
+            // Join all the byte arrays
+            List<byte> totalBytes = new List<byte>();
+            foreach (byte[] b in bytes)
+            {
+                totalBytes.AddRange(b);
+            }
+
+            byte[] hash = totalBytes.ToArray();
+
+            var hashFuncs = new List<IHash>();
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlake512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlueMidnightWish512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateGroestl512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSkein512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateJH512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateKeccak512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateLuffa512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateCubeHash512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSHAvite3_512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSIMD512());
+            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateEcho512());
+
+            foreach (var hashFunc in hashFuncs)
+            {
+                var transform = hashFunc.ComputeBytes(hash);
+                hash = transform.GetBytes();
+            }
+
+            var hash32 = new byte[32];
+            Array.Copy(hash, hash32, 32);
+
+            return hash32;
+        }
+        #endregion
+
+        #region Double Hashing 
+        public static byte[] HashSHA256(params byte[][] bytes)
+        {
+
             SHA256 crypto = SHA256Managed.Create();
 
             // Join all the byte arrays
@@ -170,6 +247,11 @@ namespace GenesisBlockInfoGen
             return hash2;
         }
 
+        public static byte[] Hash(params byte[][] bytes)
+        {
+            //return HashX11bet(bytes);
+            return HashX11(bytes);
+        }
 
         public static BigInteger HashAsBigInteger(params byte[][] bytes)
         {
@@ -249,6 +331,7 @@ namespace GenesisBlockInfoGen
 
         public static BigInteger GetBigIntegerFromCompact(uint nCompact)
         {
+            /*
             uint nSize = nCompact >> 24;
             bool fNegative = (nCompact & 0x00800000) != 0;
             uint nWord = nCompact & 0x007fffff;
@@ -269,7 +352,7 @@ namespace GenesisBlockInfoGen
             if (fNegative)
             {
                 result = result * -1;
-            }
+            }*/
 
 
             //			Console.WriteLine ($"Given:  {nCompact} {Utilities.GetBytesString(BitConverter.GetBytes(nCompact), false)}");
@@ -278,7 +361,20 @@ namespace GenesisBlockInfoGen
             //			Console.WriteLine ($"isNeg:  {fNegative.ToString()}");
             //			Console.WriteLine ($"Result: {result} {Utilities.GetBytesString (result.ToByteArray (), false)}");
 
+            BigInteger result = (nCompact & 0xffffff) * BigInteger.Pow( 2, (int)(8 * ((nCompact >> 24) - 3)));
+
+
             return result;
+        }
+
+        public static string ToHex(byte[] data)
+        {
+            return BitConverter.ToString(data).Replace("-", ":");
+        }
+
+        public static string ToSolidHex(byte[] data)
+        {
+            return BitConverter.ToString(data).Replace("-", "");
         }
     }
 }

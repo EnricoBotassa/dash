@@ -13,6 +13,7 @@ using Org.BouncyCastle.Crypto.Generators;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.X509;
 using Org.BouncyCastle.Pkcs;
+using HashLib;
 
 namespace GenesisBlockInfoGen
 {
@@ -62,30 +63,20 @@ namespace GenesisBlockInfoGen
             var privKeyBytes = privateKey.D.ToByteArrayUnsigned();
             var pubKeyBytes = publicKey.Q.GetEncoded();
 
-            string privKey = ToSolidHex(privKeyBytes);
-            string pubKey = ToSolidHex(pubKeyBytes);
+            string privKey = Utilities.ToSolidHex(privKeyBytes);
+            string pubKey = Utilities.ToSolidHex(pubKeyBytes);
 
             Console.WriteLine($"Curve: {curve}");
             Console.WriteLine($"Generated private key ({privKeyBytes.Length} bytes):");
-            Console.WriteLine($"{ToHex(privKeyBytes)}");
+            Console.WriteLine($"{Utilities.ToHex(privKeyBytes)}");
             Console.WriteLine($"Generated public key ({pubKeyBytes.Length} bytes):");
-            Console.WriteLine($"{ToHex(pubKeyBytes)}");
+            Console.WriteLine($"{Utilities.ToHex(pubKeyBytes)}");
             Console.WriteLine("=====================================");
             Console.WriteLine($"priv:");
-            Console.WriteLine($"{ToSolidHex(privKeyBytes)}");
+            Console.WriteLine($"{Utilities.ToSolidHex(privKeyBytes)}");
             Console.WriteLine($"pub:");
-            Console.WriteLine($"{ToSolidHex(pubKeyBytes)}");
+            Console.WriteLine($"{Utilities.ToSolidHex(pubKeyBytes)}");
 
-        }
-
-        public static string ToHex(byte[] data)
-        {
-            return BitConverter.ToString(data).Replace("-", ":");
-        }
-
-        public static string ToSolidHex(byte[] data)
-        {
-            return BitConverter.ToString(data).Replace("-", "");
         }
 
         static void Main(string[] args)
@@ -96,7 +87,22 @@ namespace GenesisBlockInfoGen
             byte[] hash = sha256.ComputeHash(Encoding.UTF8.GetBytes(msg), 0, Encoding.UTF8.GetByteCount(msg));
 
             DashEC.FullSignatureTest(hash);*/
-            SecP256r1_Test();
+            //SecP256r1_Test();
+            //Console.ReadKey();
+            var keyPair = DashEC.SecP256r1KeyPairGen();
+
+            Console.WriteLine("################################ ZALGOCOIN MAIN CHAIN ##################################");
+            BlockSolver s = new BlockSolver(
+                keyPair.PubKeyByteHexStr, // pubkey
+                "It's ZalgoCoin time! He comes. 01/08/2018", // timestamp
+                1535788800, // timestamp bits
+                0, // nBits
+                0, // nTime
+                0, // nNonce
+                3); // threads
+
+            s.Solve();
+
             Console.ReadKey();
         }
     }
