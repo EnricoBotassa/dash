@@ -249,8 +249,8 @@ namespace GenesisBlockInfoGen
 
         public static byte[] Hash(params byte[][] bytes)
         {
-            return HashX11bet(bytes);
-            //return HashX11(bytes);
+            //return HashX11bet(bytes);
+            return HashX11(bytes);
         }
 
         public static BigInteger HashAsBigInteger(params byte[][] bytes)
