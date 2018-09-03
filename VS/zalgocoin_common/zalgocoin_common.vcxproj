@@ -186,6 +186,7 @@
     <ClInclude Include="..\..\src\chainparams.h" />
     <ClInclude Include="..\..\src\chainparamsbase.h" />
     <ClInclude Include="..\..\src\chainparamsseeds.h" />
+    <ClInclude Include="..\..\src\chainparams_const.h" />
     <ClInclude Include="..\..\src\checkpoints.h" />
     <ClInclude Include="..\..\src\checkqueue.h" />
     <ClInclude Include="..\..\src\clientversion.h" />

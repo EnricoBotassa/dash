@@ -770,5 +770,8 @@
     <ClInclude Include="..\..\src\zmq\zmqpublishnotifier.h">
       <Filter>Файлы заголовков\zmq</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\chainparams_const.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
