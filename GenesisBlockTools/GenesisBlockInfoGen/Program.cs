@@ -51,7 +51,21 @@ namespace GenesisBlockInfoGen
             Console.WriteLine($" Input string: {contStr}");
             Console.WriteLine($" X11 hashe: {outputHex}");
 
-            Console.ReadKey();
+            Console.WriteLine("################################ GENESIS BLOCK MAINER ##################################");
+            BlockSolver s = new BlockSolver(
+                "048C5702648E9C7FF4FB64AFFAE1E3CE7150BB73FD66232AF229EC29EA8D2568817870C1E24E2BF58410DCD72BA7B3FC1AAAB2B88E58B2D595405A0D5AAE8B03E8",
+                //keyPair.PubKeyByteHexStr, // pubkey
+                "It's ZalgoCoin time! He comes. 01/10/2018", // timestamp
+                1535788800, // timestamp bits
+                0, // nBits
+                0, // nTime
+                0, // nNonce
+                1); // threads
+
+            s.Solve();
+
+
+             Console.ReadKey();
         }
     }
 }

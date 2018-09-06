@@ -30,9 +30,19 @@ namespace GenesisBlockInfoGen
             txNew.vin.Add(new TxIn());
             txNew.vout.Add(new TxOut());
 
+            string prefix = "";
+            if (timestamp.Length > 76)
+                prefix = "4c";
+
+            prefix += $"{Convert.ToChar(timestamp.Length)}";
+
+            string hexStr = "04ffff001d0104";
+            var startBytes = Utilities.StringToByteArrayFastest(hexStr);
+            string str = Encoding.ASCII.GetString(startBytes);
+
             txNew.vin[0].scriptSig = new Script();
-            txNew.vin[0].scriptSig += /*0x04ffff001d0104;*/timestampBits;
-            txNew.vin[0].scriptSig += new BigInteger(4);
+            txNew.vin[0].scriptSig.Buffer = startBytes.ToList();//timestampBits;
+                                                                //txNew.vin[0].scriptSig += prefix;
             txNew.vin[0].scriptSig += timestamp;
 
             var insc = Utilities.GetBytesString(txNew.vin[0].scriptSig.Buffer);
@@ -42,13 +52,19 @@ namespace GenesisBlockInfoGen
             txNew.vout[0].scriptPubKey += Utilities.StringToByteArrayFastest(publicKey);
             txNew.vout[0].scriptPubKey += OpCodeType.OP_CHECKSIG;
 
+            // Original transaction check
+            var txGenBytes = txNew.Serialize();
+            var originalTx = "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff3104ffff001d01042949742773205a616c676f436f696e2074696d652120486520636f6d65732e2030312f31302f32303138ffffffff0100f2052a010000004341048c5702648e9c7ff4fb64affae1e3ce7150bb73fd66232af229ec29ea8d2568817870c1e24e2bf58410dcd72ba7b3fc1aaab2b88e58b2d595405a0d5aae8b03e8ac00000000";
+            byte[] txOriginalBytes = Utilities.StringToByteArrayFastest(originalTx);
+            Utilities.CompareTransactions(txOriginalBytes, txGenBytes);
+
             genesis.vtx.Add(txNew);
             genesis.hashPrevBlock = 0;
             Console.WriteLine($"Merkle root int: {genesis.BuildMerkleTree()}");
             Console.WriteLine($"Merkle root: {Utilities.GetBytesString(genesis.BuildMerkleTree().ToByteArray(), false)}");
             Console.WriteLine($"Merkle swap: {Utilities.GetBytesString(Utilities.ByteSwap(genesis.BuildMerkleTree().ToByteArray()), false)}");
 
-            if(nBits == 0)
+            if (nBits == 0)
             {
                 // X11
                 nBits = 0x1e0ffff0;
@@ -59,18 +75,15 @@ namespace GenesisBlockInfoGen
             BigInteger diff = Utilities.GetBigIntegerFromCompact(nBits);
             Console.WriteLine();
             Console.WriteLine($"Target: {diff}");
-
-            //diff:
-            //110426256551982323683968927107989468512300641233199776096820318605148160
             Console.WriteLine($"Difficulty: {Utilities.GetBytesString(Utilities.ByteSwap(Utilities.BytePad(diff.ToByteArray(), 32, 0)), false)}");
             Console.WriteLine();
             genesis.hashMerkleRoot = genesis.BuildMerkleTree();
 
-            var mrb = Utilities.BigInt256ToBytes(genesis.hashMerkleRoot);
-            var mr = Utilities.GetBytesString(mrb, false);
-
+            // Original merkle root check
             // real merkle root
-            //60f0c9fc3f4e65879bbb2388bff0540cdd3f9dd2ef6c08e6e043376cdc338e1a
+            //03ee2f8f83e42b3f6db2104a1076f5e299cc4da4a670ef5d659f0e373ee9e80d
+            //var mrb = Utilities.BigInt256ToBytes(genesis.hashMerkleRoot);
+            //var mr = Utilities.GetBytesString(mrb, false);
 
             genesis.nVersion = 1;
             genesis.nBits = nBits;
@@ -88,7 +101,6 @@ namespace GenesisBlockInfoGen
             isFirstJob = true;
             WorkerCount = workerCount;
         }
-
 
         public void Solve()
         {

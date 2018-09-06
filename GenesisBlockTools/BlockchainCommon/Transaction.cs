@@ -151,7 +151,7 @@ namespace GenesisBlockInfoGen
 
         public byte[] GetHash()
         {
-            return Utilities.Hash(Serialize());
+            return Utilities.MerkleHash(Serialize());
         }
     }
 }

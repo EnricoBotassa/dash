@@ -148,6 +148,12 @@ namespace GenesisBlockInfoGen
 
         #endregion
 
+        public static byte[] MerkleHash(params byte[][] bytes)
+        {
+            //return HashX11bet(bytes);
+            return HashSHA256(bytes);
+        }
+
         #region X11bet Hashing 
         public static byte[] HashX11bet(params byte[][] bytes)
         {
@@ -338,6 +344,48 @@ namespace GenesisBlockInfoGen
         public static string ToSolidHex(byte[] data)
         {
             return BitConverter.ToString(data).Replace("-", "");
+        }
+
+        public static void ConsoleWrite(string msg, ConsoleColor color = ConsoleColor.White)
+        {
+            ConsoleColor save = Console.ForegroundColor;
+            Console.ForegroundColor = color;
+            Console.Write(msg);
+            Console.ForegroundColor = save;
+        }
+
+        public static void ConsoleWriteLn(string msg, ConsoleColor color = ConsoleColor.White)
+        {
+            ConsoleColor save = Console.ForegroundColor;
+            Console.ForegroundColor = color;
+            Console.WriteLine(msg);
+            Console.ForegroundColor = save;
+        }
+
+        public static bool CompareTransactions(byte[] txOriginal, byte[] txGen)
+        {
+            bool stat = true;
+
+            int len1 = txOriginal.Count();
+            int len2 = txGen.Count();
+
+            if (txOriginal.Count() != txGen.Count())
+            {
+                Utilities.ConsoleWriteLn($"Transactions has different length ({len1} - {len2})!", ConsoleColor.Red);
+                return false;
+            }
+
+            for (int i = 0; i < txOriginal.Count(); i++)
+            {
+                Console.Write($"BYTE {i}:   ");
+                string msg = $"{txOriginal[i]} - {txGen[i]}";
+                if (txOriginal[i] == txGen[i])
+                    Utilities.ConsoleWriteLn(msg, ConsoleColor.Green);
+                else
+                    Utilities.ConsoleWriteLn(msg, ConsoleColor.Red);
+            }
+
+            return stat;
         }
     }
 }
