@@ -6,6 +6,7 @@
 
 #include "chainparams.h"
 #include "consensus/merkle.h"
+#include "chainparams_const.h"
 
 #include "tinyformat.h"
 #include "util.h"
@@ -77,8 +78,8 @@ static CBlock CreateDevNetGenesisBlock(const uint256 &prevBlockHash, const std::
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "It's ZalgoCoin time! He comes. 01/08/2018";
-    const CScript genesisOutputScript = CScript() << ParseHex("04e2d775356bf25a4caf5767707bf48da1888cb8591cfc197fd9a6da20c38aa04599adbff63e222800fe9bb99fba6be9afa8da8e0d8a8e08460029585bd600e812") << OP_CHECKSIG;
+    const char* pszTimestamp = CONSTPARAM_TIMESTAMP;
+    const CScript genesisOutputScript = CScript() << ParseHex(CONSTPARAM_MAIN_PUB) << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -189,16 +190,16 @@ public:
         pchMessageStart[1] = 0xba;
         pchMessageStart[2] = 0xb1;
         pchMessageStart[3] = 0x1f;
-        vAlertPubKey = ParseHex("041942f479e10092ba62395694cf28fdba0d6232b60aacffb59ba420d2933dd8c1b89325a453f3eb1586ee69d9536d44abd20a793f79e959c175afa9df8f639e21");
-        nDefaultPort = 9888;
+        vAlertPubKey = ParseHex(CONSTPARAM_MAIN_ALERT_PUB);
+        nDefaultPort = CONSTPARAM_MAIN_PORT;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1533153600, 2031230, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(GENMAIN_TIME, GENMAIN_NONCE, 0x1e0ffff0, 1, CONSTPARAM_GEN_REWARD * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000001242775c6ddf87ec674c19da760a12545506dc5dea64749711bbf833cde"));
-        assert(genesis.hashMerkleRoot == uint256S("0x226891f8d4c886a86c8700669c08ea2c894579d69a47abe520ee54677a512a0c"));
+        assert(consensus.hashGenesisBlock == uint256S(GENMAIN_BLOCK));
+        assert(genesis.hashMerkleRoot == uint256S(GEN_MERKLE));
 
-	vSeeds.clear();
+        vSeeds.clear();
 
         // Zalgocoin addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
@@ -228,13 +229,13 @@ public:
 
         strSporkAddress = "Xgtyuk76vhuFW2iT7UAiHgNdWXCf3J34wh";
 
-        checkpointData = (CCheckpointData) {
+        checkpointData = CCheckpointData {
             boost::assign::map_list_of
-            (  0, uint256S("0x000001242775c6ddf87ec674c19da760a12545506dc5dea64749711bbf833cde"))
+            (  0, uint256S(GENMAIN_BLOCK))
         };
 
         chainTxData = ChainTxData{
-            1533153600, // * UNIX timestamp of last known number of transactions
+            GENMAIN_TIME, // * UNIX timestamp of last known number of transactions
             0,          // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             2800        // * estimated number of transactions per second after that timestamp
@@ -312,14 +313,14 @@ public:
         pchMessageStart[1] = 0xb2;
         pchMessageStart[2] = 0xc2;
         pchMessageStart[3] = 0xaf;
-        vAlertPubKey = ParseHex("041942f479e10092ba62395694cf28fdba0d6232b60aacffb59ba420d2933dd8c1b89325a453f3eb1586ee69d9536d44abd20a793f79e959c175afa9df8f639e21");
-        nDefaultPort = 19888;
+        vAlertPubKey = ParseHex(CONSTPARAM_TEST_ALERT_PUB);
+        nDefaultPort = CONSTPARAM_TEST_PORT;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1533153601, 599877, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(GENTEST_TIME, GENTEST_NONCE, 0x1e0ffff0, 1, CONSTPARAM_GEN_REWARD * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000963bb521f51f5b205c3663fa91fceef1b00e8f27c3100f1507145486c91"));
-        assert(genesis.hashMerkleRoot == uint256S("0x226891f8d4c886a86c8700669c08ea2c894579d69a47abe520ee54677a512a0c"));
+        assert(consensus.hashGenesisBlock == uint256S(GENTEST_BLOCK));
+        assert(genesis.hashMerkleRoot == uint256S(GEN_MERKLE));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -353,13 +354,13 @@ public:
 
         strSporkAddress = "yjPtiKh2uwk3bDutTEA2q9mCtXyiZRWn55";
 
-        checkpointData = (CCheckpointData) {
+        checkpointData = CCheckpointData {
             boost::assign::map_list_of
-            (    0, uint256S("0x00000963bb521f51f5b205c3663fa91fceef1b00e8f27c3100f1507145486c91"))
+            (    0, uint256S(GENTEST_BLOCK))
         };
 
         chainTxData = ChainTxData{        
-            1533153601, // * UNIX timestamp of last known number of transactions
+			GENTEST_TIME, // * UNIX timestamp of last known number of transactions
             0,          // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             500         // * estimated number of transactions per second after that timestamp
@@ -479,7 +480,7 @@ public:
 
         strSporkAddress = "yjPtiKh2uwk3bDutTEA2q9mCtXyiZRWn55";
 
-        checkpointData = (CCheckpointData) {
+        checkpointData = CCheckpointData {
             boost::assign::map_list_of
             (      0, uint256S("00000963bb521f51f5b205c3663fa91fceef1b00e8f27c3100f1507145486c91"))
             (      1, devnetGenesis.GetHash())
@@ -554,13 +555,13 @@ public:
         pchMessageStart[1] = 0xc2;
         pchMessageStart[2] = 0xb8;
         pchMessageStart[3] = 0xac;
-        nDefaultPort = 19881;
+        nDefaultPort = CONSTPARAM_REGTEST_PORT;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1533153602, 2, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(GENREGTEST_TIME, GENREGTEST_NONCE, 0x207fffff, 1, CONSTPARAM_GEN_REWARD * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x66241f0b097effe5c2879354ef49954b7a8794c0fab20344cee4178110d119b2"));
-        assert(genesis.hashMerkleRoot == uint256S("0x226891f8d4c886a86c8700669c08ea2c894579d69a47abe520ee54677a512a0c"));
+        assert(consensus.hashGenesisBlock == uint256S(GENREGTEST_BLOCK));
+        assert(genesis.hashMerkleRoot == uint256S(GEN_MERKLE));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -577,13 +578,13 @@ public:
         // privKey: cP4EKFyJsHT39LDqgdcB43Y3YXjNyjb5Fuas1GQSeAtjnZWmZEQK
         strSporkAddress = "yj949n1UH6fDhw6HtVE5VMj2iSTaSWBMcW";
 
-        checkpointData = (CCheckpointData){
+        checkpointData = CCheckpointData{
             boost::assign::map_list_of
-            ( 0, uint256S("0x00000963bb521f51f5b205c3663fa91fceef1b00e8f27c3100f1507145486c91"))
+            ( 0, uint256S(GENREGTEST_BLOCK))
         };
 
         chainTxData = ChainTxData{
-            0,
+            GENREGTEST_TIME,
             0,
             0
         };

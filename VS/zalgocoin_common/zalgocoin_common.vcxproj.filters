@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\rpc">
+      <UniqueIdentifier>{cf8bdfcf-cf1b-4d50-a63e-a00067f5ba8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\wallet">
+      <UniqueIdentifier>{e31203f4-8fb3-43db-97fc-792e702d8095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\script">
+      <UniqueIdentifier>{7d6c43c3-4236-489c-9964-f9b466e3e5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\zmq">
+      <UniqueIdentifier>{e3debd27-ce56-4306-b5b3-5f3b0b78569c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\support">
+      <UniqueIdentifier>{4812f5c2-bb85-477c-bb28-0cdddcfce8b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\primitives">
+      <UniqueIdentifier>{dcfa2376-ec41-4ee4-858f-e55b06487c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\policy">
+      <UniqueIdentifier>{6a0b285e-a226-4ff5-ae01-f15479c528e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\crypto">
+      <UniqueIdentifier>{be16ffb3-ee7d-429b-8d51-90251e2308da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\consensus">
+      <UniqueIdentifier>{30498e99-dae3-4ca6-ba4b-17e57a2d6ff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\zmq">
+      <UniqueIdentifier>{1a669663-0781-4042-b43d-a0a8926871d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\compat">
+      <UniqueIdentifier>{9e936887-1a7f-4a2c-8c6a-7dfe918bb44c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\activemasternode.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\addrdb.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\addrman.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\alert.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\amount.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\arith_uint256.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\base58.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bip39.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\blockencodings.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bloom.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chain.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chainparams.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chainparamsbase.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\checkpoints.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\clientversion.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\coins.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\compressor.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core_read.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core_write.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dbwrapper.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dsnotificationinterface.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\governance.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\governance-classes.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\governance-object.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\governance-validators.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\governance-vote.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\governance-votedb.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hash.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hdchain.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\httprpc.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\httpserver.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\init.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\instantx.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\keepass.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\key.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\keystore.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\masternode.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\masternodeconfig.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\masternodeman.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\masternode-payments.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\masternode-sync.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\merkleblock.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\messagesigner.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\miner.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net_processing.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\netaddress.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\netbase.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\netfulfilledman.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\noui.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pow.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\privatesend.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\privatesend-client.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\privatesend-server.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\privatesend-util.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\protocol.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pubkey.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\random.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rest.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scheduler.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sendalert.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\spork.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sync.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\threadinterrupt.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\timedata.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\torcontrol.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\txdb.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\txmempool.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui_interface.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\uint256.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utilmoneystr.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utilstrencodings.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utiltime.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\validation.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\validationinterface.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\versionbits.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\warnings.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\blockchain.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\client.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\governance.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\masternode.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\mining.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\misc.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\net.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\protocol.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\rawtransaction.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rpc\server.cpp">
+      <Filter>Исходные файлы\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wallet\crypter.cpp">
+      <Filter>Исходные файлы\wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wallet\db.cpp">
+      <Filter>Исходные файлы\wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wallet\rpcdump.cpp">
+      <Filter>Исходные файлы\wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wallet\rpcwallet.cpp">
+      <Filter>Исходные файлы\wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wallet\wallet.cpp">
+      <Filter>Исходные файлы\wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wallet\walletdb.cpp">
+      <Filter>Исходные файлы\wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\interpreter.cpp">
+      <Filter>Исходные файлы\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\ismine.cpp">
+      <Filter>Исходные файлы\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\script.cpp">
+      <Filter>Исходные файлы\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\script_error.cpp">
+      <Filter>Исходные файлы\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\sigcache.cpp">
+      <Filter>Исходные файлы\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\sign.cpp">
+      <Filter>Исходные файлы\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\standard.cpp">
+      <Filter>Исходные файлы\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\zalgocoinconsensus.cpp">
+      <Filter>Исходные файлы\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zmq\zmqabstractnotifier.cpp">
+      <Filter>Исходные файлы\zmq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zmq\zmqnotificationinterface.cpp">
+      <Filter>Исходные файлы\zmq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zmq\zmqpublishnotifier.cpp">
+      <Filter>Исходные файлы\zmq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\cleanse.cpp">
+      <Filter>Исходные файлы\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\lockedpool.cpp">
+      <Filter>Исходные файлы\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\block.cpp">
+      <Filter>Исходные файлы\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\transaction.cpp">
+      <Filter>Исходные файлы\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\policy\fees.cpp">
+      <Filter>Исходные файлы\policy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\policy\policy.cpp">
+      <Filter>Исходные файлы\policy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\policy\rbf.cpp">
+      <Filter>Исходные файлы\policy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\aes_helper.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\blake.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\bmw.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\cubehash.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\echo.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\groestl.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\jh.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\keccak.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\luffa.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\shavite.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\simd.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\skein.c">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\aes.cpp">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\hmac_sha256.cpp">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\hmac_sha512.cpp">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\ripemd160.cpp">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\sha1.cpp">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\sha256.cpp">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crypto\sha512.cpp">
+      <Filter>Исходные файлы\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\consensus\merkle.cpp">
+      <Filter>Исходные файлы\consensus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\compat\glibc_sanity.cpp">
+      <Filter>Исходные файлы\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\compat\glibcxx_sanity.cpp">
+      <Filter>Исходные файлы\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\compat\strnlen.cpp">
+      <Filter>Исходные файлы\compat</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\activemasternode.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\addrdb.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\addressindex.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\addrman.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\alert.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\amount.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\arith_uint256.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\base58.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bip39.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bip39_english.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\blockencodings.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bloom.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cachemap.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cachemultimap.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chain.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chainparams.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chainparamsbase.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chainparamsseeds.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\checkpoints.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\checkqueue.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\clientversion.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\coins.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\compat.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\compressor.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core_io.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core_memusage.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cuckoocache.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dbwrapper.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dsnotificationinterface.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\flat-database.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\governance.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\governance-classes.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\governance-exceptions.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\governance-object.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\governance-validators.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\governance-vote.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\governance-votedb.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hdchain.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\httprpc.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\httpserver.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\indirectmap.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\init.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\instantx.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\keepass.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\key.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\keystore.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\limitedmap.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\masternode.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\masternodeconfig.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\masternodeman.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\masternode-payments.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\masternode-sync.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\memusage.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\merkleblock.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\messagesigner.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\miner.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\net_processing.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\netaddress.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\netbase.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\netfulfilledman.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\netmessagemaker.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\noui.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pow.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\prevector.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\privatesend.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\privatesend-client.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\privatesend-server.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\privatesend-util.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\protocol.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pubkey.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\random.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\reverselock.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scheduler.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\serialize.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\spentindex.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\spork.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\streams.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sync.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\threadinterrupt.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\threadsafety.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\timedata.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tinyformat.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\torcontrol.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\txdb.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\txmempool.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui_interface.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\uint256.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\undo.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utilmoneystr.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utilstrencodings.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utiltime.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\validation.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\validationinterface.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\version.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\versionbits.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\warnings.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wallet\db.h">
+      <Filter>Исходные файлы\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zmq\zmqabstractnotifier.h">
+      <Filter>Файлы заголовков\zmq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zmq\zmqconfig.h">
+      <Filter>Файлы заголовков\zmq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zmq\zmqnotificationinterface.h">
+      <Filter>Файлы заголовков\zmq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zmq\zmqpublishnotifier.h">
+      <Filter>Файлы заголовков\zmq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chainparams_const.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

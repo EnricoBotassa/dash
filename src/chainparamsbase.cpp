@@ -4,6 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "chainparamsbase.h"
+#include "chainparams_const.h"
 
 #include "tinyformat.h"
 #include "util.h"
@@ -34,7 +35,7 @@ class CBaseMainParams : public CBaseChainParams
 public:
     CBaseMainParams()
     {
-        nRPCPort = 9887;
+        nRPCPort = CONSTPARAM_MAIN_RPCPORT;
     }
 };
 static CBaseMainParams mainParams;
@@ -47,7 +48,7 @@ class CBaseTestNetParams : public CBaseChainParams
 public:
     CBaseTestNetParams()
     {
-        nRPCPort = 19887;
+        nRPCPort = CONSTPARAM_TEST_RPCPORT;
         strDataDir = "testnet3";
     }
 };
@@ -61,7 +62,7 @@ class CBaseDevNetParams : public CBaseChainParams
 public:
     CBaseDevNetParams(const std::string &dataDir)
     {
-        nRPCPort = 19887;
+        nRPCPort = CONSTPARAM_TEST_RPCPORT;
         strDataDir = dataDir;
     }
 };
@@ -75,7 +76,7 @@ class CBaseRegTestParams : public CBaseChainParams
 public:
     CBaseRegTestParams()
     {
-        nRPCPort = 18332;
+        nRPCPort = CONSTPARAM_REGTEST_RPCPORT;
         strDataDir = "regtest";
     }
 };
