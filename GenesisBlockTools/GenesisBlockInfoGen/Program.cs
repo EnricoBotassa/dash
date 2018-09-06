@@ -5,15 +5,6 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using Org.BouncyCastle.Asn1.X9;
-using Org.BouncyCastle.Crypto.Parameters;
-using Org.BouncyCastle.Asn1.Sec;
-using Org.BouncyCastle.Security;
-using Org.BouncyCastle.Crypto.Generators;
-using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.X509;
-using Org.BouncyCastle.Pkcs;
-using HashLib;
 
 namespace GenesisBlockInfoGen
 {
@@ -42,66 +33,23 @@ namespace GenesisBlockInfoGen
 
         */
 
-        static void SecP256r1_Test()
-        {
-            string curve = "secp256r1";
-            X9ECParameters ecParams = Org.BouncyCastle.Asn1.Sec.SecNamedCurves.GetByName(curve);
-            ECDomainParameters domainParameters = new ECDomainParameters(ecParams.Curve,
-                                                                         ecParams.G, ecParams.N, ecParams.H,
-                                                                         ecParams.GetSeed());
-            ECKeyGenerationParameters keyGenParams =
-              new ECKeyGenerationParameters(domainParameters, new SecureRandom());
-
-            AsymmetricCipherKeyPair keyPair;
-            ECKeyPairGenerator generator = new ECKeyPairGenerator();
-            generator.Init(keyGenParams);
-            keyPair = generator.GenerateKeyPair();
-
-            ECPrivateKeyParameters privateKey = (ECPrivateKeyParameters)keyPair.Private;
-            ECPublicKeyParameters publicKey = (ECPublicKeyParameters)keyPair.Public;
-
-            var privKeyBytes = privateKey.D.ToByteArrayUnsigned();
-            var pubKeyBytes = publicKey.Q.GetEncoded();
-
-            string privKey = Utilities.ToSolidHex(privKeyBytes);
-            string pubKey = Utilities.ToSolidHex(pubKeyBytes);
-
-            Console.WriteLine($"Curve: {curve}");
-            Console.WriteLine($"Generated private key ({privKeyBytes.Length} bytes):");
-            Console.WriteLine($"{Utilities.ToHex(privKeyBytes)}");
-            Console.WriteLine($"Generated public key ({pubKeyBytes.Length} bytes):");
-            Console.WriteLine($"{Utilities.ToHex(pubKeyBytes)}");
-            Console.WriteLine("=====================================");
-            Console.WriteLine($"priv:");
-            Console.WriteLine($"{Utilities.ToSolidHex(privKeyBytes)}");
-            Console.WriteLine($"pub:");
-            Console.WriteLine($"{Utilities.ToSolidHex(pubKeyBytes)}");
-
-        }
-
         static void Main(string[] args)
         {
-            /*
+            
             string msg = "StackOverflow test 123";
             SHA256Managed sha256 = new SHA256Managed();
             byte[] hash = sha256.ComputeHash(Encoding.UTF8.GetBytes(msg), 0, Encoding.UTF8.GetByteCount(msg));
 
-            DashEC.FullSignatureTest(hash);*/
-            //SecP256r1_Test();
-            //Console.ReadKey();
             var keyPair = DashEC.SecP256r1KeyPairGen();
 
             Console.WriteLine("################################ ZALGOCOIN MAIN CHAIN ##################################");
-            BlockSolver s = new BlockSolver(
-                keyPair.PubKeyByteHexStr, // pubkey
-                "It's ZalgoCoin time! He comes. 01/08/2018", // timestamp
-                1535788800, // timestamp bits
-                0, // nBits
-                0, // nTime
-                0, // nNonce
-                3); // threads
-
-            s.Solve();
+            Console.WriteLine("################################# HASH FUNCTION TEST ###################################");
+            string contStr = "The quick brown fox jumps over the lazy dog";
+            var inputBytes = Encoding.UTF8.GetBytes(contStr);
+            var outputBytes = Utilities.Hash(inputBytes);
+            var outputHex = Utilities.ToSolidHex(outputBytes);
+            Console.WriteLine($" Input string: {contStr}");
+            Console.WriteLine($" X11 hashe: {outputHex}");
 
             Console.ReadKey();
         }

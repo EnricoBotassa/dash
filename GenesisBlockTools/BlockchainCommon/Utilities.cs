@@ -1,4 +1,4 @@
-﻿using HashLib;
+﻿using SHA3Import;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -160,24 +160,7 @@ namespace GenesisBlockInfoGen
 
             byte[] hash = totalBytes.ToArray();
 
-            var hashFuncs = new List<IHash>();
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlake512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlueMidnightWish512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSkein512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateJH512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateKeccak512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateLuffa512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateCubeHash512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateGroestl512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSHAvite3_512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSIMD512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateEcho512());
-
-            foreach (var hashFunc in hashFuncs)
-            {
-                var transform = hashFunc.ComputeBytes(hash);
-                hash = transform.GetBytes();
-            }
+            // TO DO..
 
             var hash32 = new byte[32];
             Array.Copy(hash, hash32, 32);
@@ -197,29 +180,9 @@ namespace GenesisBlockInfoGen
             }
 
             byte[] hash = totalBytes.ToArray();
-
-            var hashFuncs = new List<IHash>();
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlake512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateBlueMidnightWish512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateGroestl512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSkein512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateJH512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateKeccak512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateLuffa512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateCubeHash512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSHAvite3_512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateSIMD512());
-            hashFuncs.Add(HashFactory.Crypto.SHA3.CreateEcho512());
-
-            foreach (var hashFunc in hashFuncs)
-            {
-                var transform = hashFunc.ComputeBytes(hash);
-                hash = transform.GetBytes();
-            }
-
+            hash = SHA3Lib.CalcX11(hash);
             var hash32 = new byte[32];
             Array.Copy(hash, hash32, 32);
-
             return hash32;
         }
         #endregion

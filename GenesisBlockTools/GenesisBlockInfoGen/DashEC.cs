@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Text;
 using System.Security.Cryptography;
-
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Math.EC;
 using Org.BouncyCastle.Asn1.X9;
@@ -22,6 +21,7 @@ namespace GenesisBlockInfoGen
         public string PubKeyByteHexStr;
     }
 
+    
     public static class DashEC
     {
         private static string ToHex(byte[] data)

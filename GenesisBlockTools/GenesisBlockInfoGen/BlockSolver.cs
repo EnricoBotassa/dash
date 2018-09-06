@@ -56,6 +56,9 @@ namespace GenesisBlockInfoGen
             BigInteger diff = Utilities.GetBigIntegerFromCompact(nBits);
             Console.WriteLine();
             Console.WriteLine($"Target: {diff}");
+
+            //diff:
+            //110426256551982323683968927107989468512300641233199776096820318605148160
             Console.WriteLine($"Difficulty: {Utilities.GetBytesString(Utilities.ByteSwap(Utilities.BytePad(diff.ToByteArray(), 32, 0)), false)}");
             Console.WriteLine();
             genesis.hashMerkleRoot = genesis.BuildMerkleTree();
