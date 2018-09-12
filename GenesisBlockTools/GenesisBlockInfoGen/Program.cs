@@ -62,10 +62,10 @@ namespace GenesisBlockInfoGen
                 0, // nNonce
                 1); // threads
 
-            s.Solve();
+            var res = s.Solve();
 
 
-             Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }

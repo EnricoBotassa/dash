@@ -9,8 +9,10 @@ using System.Timers;
 
 namespace GenesisBlockInfoGen
 {
-    class BlockSolver
+    public class BlockSolver
     {
+        private GenesisBlockInfo GenesisBlock = new GenesisBlockInfo();
+
         public Block genesis { get; set; }
         public uint time { get; set; }
         public uint nonce { get; set; }
@@ -22,8 +24,13 @@ namespace GenesisBlockInfoGen
         protected bool isFirstJob { get; set; }
         public uint WorkerCount { get; set; }
 
-        public BlockSolver(string publicKey, string timestamp, uint timestampBits, uint nBits, uint startTime, uint startNonce, uint workerCount)
+        public BlockSolver(string publicKey, string timestamp, ulong timestampBits, uint nBits, uint startTime, uint startNonce, uint workerCount)
         {
+            GenesisBlock.PubKeyHex = publicKey;
+            GenesisBlock.PszTimestamp = timestamp;
+            GenesisBlock.StartTime = timestampBits;
+            GenesisBlock.NBits = nBits;            
+
             genesis = new Block();
 
             Transaction txNew = new Transaction();
@@ -53,31 +60,36 @@ namespace GenesisBlockInfoGen
             txNew.vout[0].scriptPubKey += OpCodeType.OP_CHECKSIG;
 
             // Original transaction check
+            /*
             var txGenBytes = txNew.Serialize();
             var originalTx = "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff3104ffff001d01042949742773205a616c676f436f696e2074696d652120486520636f6d65732e2030312f31302f32303138ffffffff0100f2052a010000004341048c5702648e9c7ff4fb64affae1e3ce7150bb73fd66232af229ec29ea8d2568817870c1e24e2bf58410dcd72ba7b3fc1aaab2b88e58b2d595405a0d5aae8b03e8ac00000000";
             byte[] txOriginalBytes = Utilities.StringToByteArrayFastest(originalTx);
-            Utilities.CompareTransactions(txOriginalBytes, txGenBytes);
+            Utilities.CompareTransactions(txOriginalBytes, txGenBytes);*/
 
             genesis.vtx.Add(txNew);
             genesis.hashPrevBlock = 0;
-            Console.WriteLine($"Merkle root int: {genesis.BuildMerkleTree()}");
-            Console.WriteLine($"Merkle root: {Utilities.GetBytesString(genesis.BuildMerkleTree().ToByteArray(), false)}");
-            Console.WriteLine($"Merkle swap: {Utilities.GetBytesString(Utilities.ByteSwap(genesis.BuildMerkleTree().ToByteArray()), false)}");
 
             if (nBits == 0)
             {
                 // X11
                 nBits = 0x1e0ffff0;
+                GenesisBlock.NBits = nBits;
                 // SHA256
                 //nBits = 0x1d00ffff;
             }
 
             BigInteger diff = Utilities.GetBigIntegerFromCompact(nBits);
+            /*
             Console.WriteLine();
             Console.WriteLine($"Target: {diff}");
             Console.WriteLine($"Difficulty: {Utilities.GetBytesString(Utilities.ByteSwap(Utilities.BytePad(diff.ToByteArray(), 32, 0)), false)}");
-            Console.WriteLine();
+            Console.WriteLine();*/
             genesis.hashMerkleRoot = genesis.BuildMerkleTree();
+            Console.WriteLine($"Merkle root int: {genesis.hashMerkleRoot}");
+            Console.WriteLine($"Merkle root: {Utilities.GetBytesString(genesis.hashMerkleRoot.ToByteArray(), false)}");
+            Console.WriteLine($"Merkle swap: {Utilities.GetBytesString(Utilities.ByteSwap(genesis.hashMerkleRoot.ToByteArray()), false)}");
+
+            GenesisBlock.MerkleHash = Utilities.GetBytesString(Utilities.ByteSwap(genesis.hashMerkleRoot.ToByteArray()), false);
 
             // Original merkle root check
             // real merkle root
@@ -92,7 +104,7 @@ namespace GenesisBlockInfoGen
             time = startTime;
             nonce = startNonce;
 
-            genesis.nTime = timestampBits;// time == 0 ? Utilities.GetCurrentTimestamp() : time;
+            genesis.nTime = (uint)timestampBits;// time == 0 ? Utilities.GetCurrentTimestamp() : time;
             genesis.nNonce = nonce;
 
             jobMutex = new Mutex();
@@ -102,7 +114,12 @@ namespace GenesisBlockInfoGen
             WorkerCount = workerCount;
         }
 
-        public void Solve()
+        public GenesisBlockInfo GetBlockInfo()
+        {
+            return GenesisBlock;
+        }
+
+        public GenesisBlockInfo Solve()
         {
             // Environment.ProcessorCount
 
@@ -167,6 +184,7 @@ namespace GenesisBlockInfoGen
             //
             //			}
 
+            return GenesisBlock;
         }
 
         protected uint[] GetNextJob()
@@ -227,7 +245,6 @@ namespace GenesisBlockInfoGen
 
                 // Get the hash of the block
                 byte[] hash = Utilities.Hash(headerBlock);
-                //byte[] hash = Utilities.Hash(headerBlock);
 
                 // Check debug check - run one job
                 //				if (jobMutex.WaitOne ()) {
@@ -283,6 +300,9 @@ namespace GenesisBlockInfoGen
                         Utilities.PrintBytes(blockBytes);
                         Console.WriteLine();
                         Console.WriteLine();
+
+                        GenesisBlock.Nonce = genesis.nNonce;
+                        GenesisBlock.GenesisHash = Utilities.GetBytesString(Utilities.ByteSwap(hash), false);
 
                         jobMutex.ReleaseMutex();
                     }
