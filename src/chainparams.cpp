@@ -186,15 +186,15 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x2d;
-        pchMessageStart[1] = 0xba;
-        pchMessageStart[2] = 0xb1;
-        pchMessageStart[3] = 0x1f;
+        pchMessageStart[0] = MAIN_MessageStart[0];
+        pchMessageStart[1] = MAIN_MessageStart[1];
+        pchMessageStart[2] = MAIN_MessageStart[2];
+        pchMessageStart[3] = MAIN_MessageStart[3];
         vAlertPubKey = ParseHex(CONSTPARAM_MAIN_ALERT_PUB);
         nDefaultPort = CONSTPARAM_MAIN_PORT;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(GENMAIN_TIME, GENMAIN_NONCE, 0x1e0ffff0, 1, CONSTPARAM_GEN_REWARD * COIN);
+        genesis = CreateGenesisBlock(GENMAIN_TIME, GENMAIN_NONCE, 0x1e0ffff0, 1, CONSTPARAM_GEN_REWARD);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S(GENMAIN_BLOCK));
         assert(genesis.hashMerkleRoot == uint256S(GEN_MERKLE));
@@ -309,15 +309,15 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000004a7878409189b7a8f75b3815d9b8c45ee8f79955a6c727d83bddb04"); // 143200
 
-        pchMessageStart[0] = 0xc1;
-        pchMessageStart[1] = 0xb2;
-        pchMessageStart[2] = 0xc2;
-        pchMessageStart[3] = 0xaf;
+        pchMessageStart[0] = TEST_MessageStart[0];
+        pchMessageStart[1] = TEST_MessageStart[1];
+        pchMessageStart[2] = TEST_MessageStart[2];
+        pchMessageStart[3] = TEST_MessageStart[3];
         vAlertPubKey = ParseHex(CONSTPARAM_TEST_ALERT_PUB);
         nDefaultPort = CONSTPARAM_TEST_PORT;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(GENTEST_TIME, GENTEST_NONCE, 0x1e0ffff0, 1, CONSTPARAM_GEN_REWARD * COIN);
+        genesis = CreateGenesisBlock(GENTEST_TIME, GENTEST_NONCE, 0x1e0ffff0, 1, CONSTPARAM_GEN_REWARD);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S(GENTEST_BLOCK));
         assert(genesis.hashMerkleRoot == uint256S(GEN_MERKLE));
@@ -551,14 +551,14 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00");
 
-        pchMessageStart[0] = 0xac;
-        pchMessageStart[1] = 0xc2;
-        pchMessageStart[2] = 0xb8;
-        pchMessageStart[3] = 0xac;
+        pchMessageStart[0] = REGTEST_MessageStart[0];
+        pchMessageStart[1] = REGTEST_MessageStart[1];
+        pchMessageStart[2] = REGTEST_MessageStart[2];
+        pchMessageStart[3] = REGTEST_MessageStart[3];
         nDefaultPort = CONSTPARAM_REGTEST_PORT;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(GENREGTEST_TIME, GENREGTEST_NONCE, 0x207fffff, 1, CONSTPARAM_GEN_REWARD * COIN);
+        genesis = CreateGenesisBlock(GENREGTEST_TIME, GENREGTEST_NONCE, 0x207fffff, 1, CONSTPARAM_GEN_REWARD);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S(GENREGTEST_BLOCK));
         assert(genesis.hashMerkleRoot == uint256S(GEN_MERKLE));
