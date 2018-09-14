@@ -49,6 +49,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TextBox_SeedPhrase = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ChBox_SrcFinded = new System.Windows.Forms.CheckBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.Btn_Folder = new System.Windows.Forms.Button();
+            this.Box_Folder = new System.Windows.Forms.TextBox();
             this.TextBox_CBold = new System.Windows.Forms.TextBox();
             this.TextBox_CPrefix = new System.Windows.Forms.TextBox();
             this.TextBox_CName = new System.Windows.Forms.TextBox();
@@ -72,8 +77,23 @@
             this.ChBox_Main = new System.Windows.Forms.CheckBox();
             this.MainTimer = new System.Windows.Forms.Timer(this.components);
             this.GUITimer = new System.Windows.Forms.Timer(this.components);
-            this.OutputConsole = new ConsoleControl.ConsoleControl();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.OutputConsole = new ConsoleControl.ConsoleControl();
+            this.FolderBrowserSrc = new System.Windows.Forms.FolderBrowserDialog();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.UD_TestRPC = new System.Windows.Forms.NumericUpDown();
+            this.UD_TestRegRPC = new System.Windows.Forms.NumericUpDown();
+            this.UD_MainRPC = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
+            this.UD_TestPort = new System.Windows.Forms.NumericUpDown();
+            this.UD_TestRegPort = new System.Windows.Forms.NumericUpDown();
+            this.UD_MainPort = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Btn_Fork = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UD_Second)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UD_Minute)).BeginInit();
@@ -81,6 +101,13 @@
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_TestRPC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_TestRegRPC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_MainRPC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_TestPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_TestRegPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_MainPort)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -104,7 +131,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.TextBox_SeedPhrase);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 276);
+            this.groupBox1.Location = new System.Drawing.Point(3, 369);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -294,6 +321,11 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.groupBox2.Controls.Add(this.ChBox_SrcFinded);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.Btn_Folder);
+            this.groupBox2.Controls.Add(this.Box_Folder);
             this.groupBox2.Controls.Add(this.TextBox_CBold);
             this.groupBox2.Controls.Add(this.TextBox_CPrefix);
             this.groupBox2.Controls.Add(this.TextBox_CName);
@@ -307,10 +339,62 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(669, 132);
+            this.groupBox2.Size = new System.Drawing.Size(669, 227);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Common params";
+            // 
+            // ChBox_SrcFinded
+            // 
+            this.ChBox_SrcFinded.AutoSize = true;
+            this.ChBox_SrcFinded.Enabled = false;
+            this.ChBox_SrcFinded.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ChBox_SrcFinded.Location = new System.Drawing.Point(297, 195);
+            this.ChBox_SrcFinded.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ChBox_SrcFinded.Name = "ChBox_SrcFinded";
+            this.ChBox_SrcFinded.Size = new System.Drawing.Size(18, 17);
+            this.ChBox_SrcFinded.TabIndex = 30;
+            this.ChBox_SrcFinded.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 190);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(262, 25);
+            this.label19.TabIndex = 11;
+            this.label19.Text = "chainparams_const.h finded:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(7, 130);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(191, 25);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "Dash sources folder:";
+            // 
+            // Btn_Folder
+            // 
+            this.Btn_Folder.BackColor = System.Drawing.Color.Azure;
+            this.Btn_Folder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_Folder.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Folder.Image")));
+            this.Btn_Folder.Location = new System.Drawing.Point(585, 148);
+            this.Btn_Folder.Name = "Btn_Folder";
+            this.Btn_Folder.Size = new System.Drawing.Size(62, 44);
+            this.Btn_Folder.TabIndex = 9;
+            this.Btn_Folder.UseVisualStyleBackColor = false;
+            this.Btn_Folder.Click += new System.EventHandler(this.Btn_Folder_Click);
+            // 
+            // Box_Folder
+            // 
+            this.Box_Folder.Enabled = false;
+            this.Box_Folder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Box_Folder.Location = new System.Drawing.Point(9, 157);
+            this.Box_Folder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Box_Folder.Name = "Box_Folder";
+            this.Box_Folder.Size = new System.Drawing.Size(570, 26);
+            this.Box_Folder.TabIndex = 8;
             // 
             // TextBox_CBold
             // 
@@ -407,7 +491,7 @@
             this.groupBox4.Controls.Add(this.ChBox_MainAlert);
             this.groupBox4.Controls.Add(this.ChBox_Main);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox4.Location = new System.Drawing.Point(3, 139);
+            this.groupBox4.Location = new System.Drawing.Point(3, 233);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -534,18 +618,7 @@
             // GUITimer
             // 
             this.GUITimer.Interval = 10;
-            this.GUITimer.Tick += new System.EventHandler(this.GUITimar_Tick);
-            // 
-            // OutputConsole
-            // 
-            this.OutputConsole.IsInputEnabled = true;
-            this.OutputConsole.Location = new System.Drawing.Point(3, 22);
-            this.OutputConsole.Margin = new System.Windows.Forms.Padding(6);
-            this.OutputConsole.Name = "OutputConsole";
-            this.OutputConsole.SendKeyboardCommandsToProcess = false;
-            this.OutputConsole.ShowDiagnostics = false;
-            this.OutputConsole.Size = new System.Drawing.Size(985, 764);
-            this.OutputConsole.TabIndex = 12;
+            this.GUITimer.Tick += new System.EventHandler(this.GUITimer_Tick);
             // 
             // groupBox3
             // 
@@ -556,10 +629,245 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(997, 786);
+            this.groupBox3.Size = new System.Drawing.Size(997, 784);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Output";
+            // 
+            // OutputConsole
+            // 
+            this.OutputConsole.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OutputConsole.IsInputEnabled = true;
+            this.OutputConsole.Location = new System.Drawing.Point(3, 25);
+            this.OutputConsole.Margin = new System.Windows.Forms.Padding(6);
+            this.OutputConsole.Name = "OutputConsole";
+            this.OutputConsole.SendKeyboardCommandsToProcess = false;
+            this.OutputConsole.ShowDiagnostics = false;
+            this.OutputConsole.Size = new System.Drawing.Size(991, 757);
+            this.OutputConsole.TabIndex = 0;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.groupBox5.Controls.Add(this.label24);
+            this.groupBox5.Controls.Add(this.label23);
+            this.groupBox5.Controls.Add(this.UD_TestRPC);
+            this.groupBox5.Controls.Add(this.UD_TestRegRPC);
+            this.groupBox5.Controls.Add(this.UD_MainRPC);
+            this.groupBox5.Controls.Add(this.label25);
+            this.groupBox5.Controls.Add(this.UD_TestPort);
+            this.groupBox5.Controls.Add(this.UD_TestRegPort);
+            this.groupBox5.Controls.Add(this.UD_MainPort);
+            this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Controls.Add(this.label21);
+            this.groupBox5.Controls.Add(this.label20);
+            this.groupBox5.Controls.Add(this.Btn_Fork);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox5.Location = new System.Drawing.Point(3, 609);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Size = new System.Drawing.Size(669, 175);
+            this.groupBox5.TabIndex = 20;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Fork building:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(275, 121);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(71, 25);
+            this.label24.TabIndex = 44;
+            this.label24.Text = "- RPC:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(275, 82);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(71, 25);
+            this.label23.TabIndex = 43;
+            this.label23.Text = "- RPC:";
+            // 
+            // UD_TestRPC
+            // 
+            this.UD_TestRPC.Location = new System.Drawing.Point(353, 80);
+            this.UD_TestRPC.Maximum = new decimal(new int[] {
+            19989,
+            0,
+            0,
+            0});
+            this.UD_TestRPC.Minimum = new decimal(new int[] {
+            19000,
+            0,
+            0,
+            0});
+            this.UD_TestRPC.Name = "UD_TestRPC";
+            this.UD_TestRPC.Size = new System.Drawing.Size(120, 30);
+            this.UD_TestRPC.TabIndex = 42;
+            this.UD_TestRPC.Value = new decimal(new int[] {
+            19979,
+            0,
+            0,
+            0});
+            // 
+            // UD_TestRegRPC
+            // 
+            this.UD_TestRegRPC.Location = new System.Drawing.Point(353, 119);
+            this.UD_TestRegRPC.Maximum = new decimal(new int[] {
+            9988,
+            0,
+            0,
+            0});
+            this.UD_TestRegRPC.Minimum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
+            this.UD_TestRegRPC.Name = "UD_TestRegRPC";
+            this.UD_TestRegRPC.Size = new System.Drawing.Size(120, 30);
+            this.UD_TestRegRPC.TabIndex = 41;
+            this.UD_TestRegRPC.Value = new decimal(new int[] {
+            9978,
+            0,
+            0,
+            0});
+            // 
+            // UD_MainRPC
+            // 
+            this.UD_MainRPC.Location = new System.Drawing.Point(353, 39);
+            this.UD_MainRPC.Maximum = new decimal(new int[] {
+            9989,
+            0,
+            0,
+            0});
+            this.UD_MainRPC.Minimum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
+            this.UD_MainRPC.Name = "UD_MainRPC";
+            this.UD_MainRPC.Size = new System.Drawing.Size(120, 30);
+            this.UD_MainRPC.TabIndex = 40;
+            this.UD_MainRPC.Value = new decimal(new int[] {
+            9979,
+            0,
+            0,
+            0});
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(275, 41);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(71, 25);
+            this.label25.TabIndex = 37;
+            this.label25.Text = "- RPC:";
+            // 
+            // UD_TestPort
+            // 
+            this.UD_TestPort.Location = new System.Drawing.Point(145, 80);
+            this.UD_TestPort.Maximum = new decimal(new int[] {
+            19989,
+            0,
+            0,
+            0});
+            this.UD_TestPort.Minimum = new decimal(new int[] {
+            19000,
+            0,
+            0,
+            0});
+            this.UD_TestPort.Name = "UD_TestPort";
+            this.UD_TestPort.Size = new System.Drawing.Size(120, 30);
+            this.UD_TestPort.TabIndex = 36;
+            this.UD_TestPort.Value = new decimal(new int[] {
+            19989,
+            0,
+            0,
+            0});
+            // 
+            // UD_TestRegPort
+            // 
+            this.UD_TestRegPort.Location = new System.Drawing.Point(145, 119);
+            this.UD_TestRegPort.Maximum = new decimal(new int[] {
+            9988,
+            0,
+            0,
+            0});
+            this.UD_TestRegPort.Minimum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
+            this.UD_TestRegPort.Name = "UD_TestRegPort";
+            this.UD_TestRegPort.Size = new System.Drawing.Size(120, 30);
+            this.UD_TestRegPort.TabIndex = 35;
+            this.UD_TestRegPort.Value = new decimal(new int[] {
+            9988,
+            0,
+            0,
+            0});
+            // 
+            // UD_MainPort
+            // 
+            this.UD_MainPort.Location = new System.Drawing.Point(145, 39);
+            this.UD_MainPort.Maximum = new decimal(new int[] {
+            9989,
+            0,
+            0,
+            0});
+            this.UD_MainPort.Minimum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
+            this.UD_MainPort.Name = "UD_MainPort";
+            this.UD_MainPort.Size = new System.Drawing.Size(120, 30);
+            this.UD_MainPort.TabIndex = 34;
+            this.UD_MainPort.Value = new decimal(new int[] {
+            9989,
+            0,
+            0,
+            0});
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(9, 121);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(130, 25);
+            this.label22.TabIndex = 33;
+            this.label22.Text = "RegTest port:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(44, 82);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(95, 25);
+            this.label21.TabIndex = 32;
+            this.label21.Text = "Test port:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(40, 41);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(99, 25);
+            this.label20.TabIndex = 31;
+            this.label20.Text = "Main port:";
+            // 
+            // Btn_Fork
+            // 
+            this.Btn_Fork.Location = new System.Drawing.Point(547, 113);
+            this.Btn_Fork.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_Fork.Name = "Btn_Fork";
+            this.Btn_Fork.Size = new System.Drawing.Size(116, 58);
+            this.Btn_Fork.TabIndex = 20;
+            this.Btn_Fork.Text = "Fork!";
+            this.Btn_Fork.UseVisualStyleBackColor = true;
+            this.Btn_Fork.Click += new System.EventHandler(this.Btn_Fork_Click);
             // 
             // ForkGenerator
             // 
@@ -567,6 +875,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(1680, 789);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
@@ -587,6 +896,14 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_TestRPC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_TestRegRPC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_MainRPC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_TestPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_TestRegPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UD_MainPort)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -635,8 +952,28 @@
         private System.Windows.Forms.CheckBox ChBox_MainSpork;
         private System.Windows.Forms.Timer MainTimer;
         private System.Windows.Forms.Timer GUITimer;
-        private ConsoleControl.ConsoleControl OutputConsole;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.FolderBrowserDialog FolderBrowserSrc;
+        private System.Windows.Forms.TextBox Box_Folder;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button Btn_Folder;
+        private System.Windows.Forms.CheckBox ChBox_SrcFinded;
+        private System.Windows.Forms.Label label19;
+        private ConsoleControl.ConsoleControl OutputConsole;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button Btn_Fork;
+        private System.Windows.Forms.NumericUpDown UD_TestPort;
+        private System.Windows.Forms.NumericUpDown UD_TestRegPort;
+        private System.Windows.Forms.NumericUpDown UD_MainPort;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.NumericUpDown UD_TestRPC;
+        private System.Windows.Forms.NumericUpDown UD_TestRegRPC;
+        private System.Windows.Forms.NumericUpDown UD_MainRPC;
+        private System.Windows.Forms.Label label25;
     }
 }
 
