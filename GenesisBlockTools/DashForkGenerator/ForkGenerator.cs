@@ -351,7 +351,7 @@ namespace DashForkGenerator
                     // main net pub key
                     tmplstr = tmplstr.Replace($"%main_pub%", ForkData.KeyPairs[NetType.Main].PubKeyByteHexStr);
                     // main net alert pub key
-                    tmplstr = tmplstr.Replace($"%main_pub%", ForkData.KeyPairs[NetType.MainAlert].PubKeyByteHexStr);
+                    tmplstr = tmplstr.Replace($"%main_alert_pub%", ForkData.KeyPairs[NetType.MainAlert].PubKeyByteHexStr);
                     // main net port
                     tmplstr = tmplstr.Replace($"%main_port%", portsDict[PortsType.MainPort].ToString());
 
@@ -411,8 +411,6 @@ namespace DashForkGenerator
                     string path = $"{SourcePath}\\{ParamSrcFile}.h";
                     if(File.Exists(path))
                     {
-                        File.Delete(path);
-                        File.Create(path);
                         using (StreamWriter sw = new StreamWriter(path))
                         {
                             sw.Write(tmplstr);
@@ -436,7 +434,7 @@ namespace DashForkGenerator
 
             for(int i = 0; i < num; i++)
             {
-                bytes[i] = (byte)rnd.Next((int)byte.MaxValue);
+                bytes.Add((byte)rnd.Next((int)byte.MaxValue));
             }
 
             return bytes;

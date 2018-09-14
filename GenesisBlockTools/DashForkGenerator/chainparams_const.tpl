@@ -8,15 +8,15 @@
 #include "protocol.h"
 
 #define CONSTPARAM_TIMESTAMP "%zsvTimestamp%"
-const CMessageHeader::MessageStartChars MAIN_MessageStart = { %main_hex1% , %main_hex2%, %main_hex3%, %main_hex4% };
+const CMessageHeader::MessageStartChars MAIN_MessageStart = { 0x%main_hex1% , 0x%main_hex2%, 0x%main_hex3%, 0x%main_hex4% };
 #define CONSTPARAM_MAIN_PUB "%main_pub%"
 #define CONSTPARAM_MAIN_ALERT_PUB "%main_alert_pub%"
 #define CONSTPARAM_MAIN_PORT %main_port%
-const CMessageHeader::MessageStartChars TEST_MessageStart = { %test_hex1% , %test_hex2%, %test_hex3%, %test_hex4% };
+const CMessageHeader::MessageStartChars TEST_MessageStart = { 0x%test_hex1% , 0x%test_hex2%, 0x%test_hex3%, 0x%test_hex4% };
 #define CONSTPARAM_TEST_ALERT_PUB "%test_alert_pub%"
 #define CONSTPARAM_TEST_PORT %test_port%
 #define CONSTPARAM_REGTEST_PORT %regtest_port%
-const CMessageHeader::MessageStartChars REGTEST_MessageStart = { %regtest_hex1% , %regtest_hex2%, %regtest_hex3%, %regtest_hex4% };
+const CMessageHeader::MessageStartChars REGTEST_MessageStart = { 0x%regtest_hex1% , 0x%regtest_hex2%, 0x%regtest_hex3%, 0x%regtest_hex4% };
 
 #define GENMAIN_TIME %main_timestamp%
 #define GENMAIN_NONCE %main_nonce%

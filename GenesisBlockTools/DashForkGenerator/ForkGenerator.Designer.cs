@@ -78,7 +78,6 @@
             this.MainTimer = new System.Windows.Forms.Timer(this.components);
             this.GUITimer = new System.Windows.Forms.Timer(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.OutputConsole = new ConsoleControl.ConsoleControl();
             this.FolderBrowserSrc = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -94,6 +93,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.Btn_Fork = new System.Windows.Forms.Button();
+            this.OutputConsole = new ConsoleControl.ConsoleControl();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UD_Second)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UD_Minute)).BeginInit();
@@ -316,7 +316,7 @@
             this.TextBox_SeedPhrase.Name = "TextBox_SeedPhrase";
             this.TextBox_SeedPhrase.Size = new System.Drawing.Size(655, 30);
             this.TextBox_SeedPhrase.TabIndex = 0;
-            this.TextBox_SeedPhrase.Text = "My first crypto currency";
+            this.TextBox_SeedPhrase.Text = "It\'s Newcoin time! He comes.";
             // 
             // groupBox2
             // 
@@ -361,9 +361,9 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(9, 190);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(262, 25);
+            this.label19.Size = new System.Drawing.Size(258, 25);
             this.label19.TabIndex = 11;
-            this.label19.Text = "chainparams_const.h finded:";
+            this.label19.Text = "chainparams_const.h found:";
             // 
             // label18
             // 
@@ -634,18 +634,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Output";
             // 
-            // OutputConsole
-            // 
-            this.OutputConsole.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OutputConsole.IsInputEnabled = true;
-            this.OutputConsole.Location = new System.Drawing.Point(3, 25);
-            this.OutputConsole.Margin = new System.Windows.Forms.Padding(6);
-            this.OutputConsole.Name = "OutputConsole";
-            this.OutputConsole.SendKeyboardCommandsToProcess = false;
-            this.OutputConsole.ShowDiagnostics = false;
-            this.OutputConsole.Size = new System.Drawing.Size(991, 757);
-            this.OutputConsole.TabIndex = 0;
-            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -868,6 +856,18 @@
             this.Btn_Fork.Text = "Fork!";
             this.Btn_Fork.UseVisualStyleBackColor = true;
             this.Btn_Fork.Click += new System.EventHandler(this.Btn_Fork_Click);
+            // 
+            // OutputConsole
+            // 
+            this.OutputConsole.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OutputConsole.IsInputEnabled = true;
+            this.OutputConsole.Location = new System.Drawing.Point(3, 25);
+            this.OutputConsole.Margin = new System.Windows.Forms.Padding(6);
+            this.OutputConsole.Name = "OutputConsole";
+            this.OutputConsole.SendKeyboardCommandsToProcess = false;
+            this.OutputConsole.ShowDiagnostics = false;
+            this.OutputConsole.Size = new System.Drawing.Size(991, 757);
+            this.OutputConsole.TabIndex = 0;
             // 
             // ForkGenerator
             // 
