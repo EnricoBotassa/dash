@@ -37,7 +37,7 @@ namespace DashForkGenerator
         
         public void WritePhrase(ConsoleControl.ConsoleControl console, int size)
         {
-            console.WriteOutput(Text, Color);
+            //console.Write(Text, Color, Color.Black);
         }
     }
 
