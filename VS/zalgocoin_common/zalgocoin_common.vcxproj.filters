@@ -46,6 +46,9 @@
     <Filter Include="Исходные файлы\compat">
       <UniqueIdentifier>{9e936887-1a7f-4a2c-8c6a-7dfe918bb44c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\compat">
+      <UniqueIdentifier>{8ca59005-6a14-4900-a679-c73b8c38cabb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\activemasternode.cpp">
@@ -772,6 +775,15 @@
     </ClInclude>
     <ClInclude Include="..\..\src\chainparams_const.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\compat\byteswap.h">
+      <Filter>Файлы заголовков\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\compat\endian.h">
+      <Filter>Файлы заголовков\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\compat\sanity.h">
+      <Filter>Файлы заголовков\compat</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

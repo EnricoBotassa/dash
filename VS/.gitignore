@@ -6,5 +6,8 @@ x64/
 x86/
 
 packages/
+zalgocoin/[Gg]enerated[Ff]iles/
 
 *.user
+!*.pb.cc
+!*.pb.h

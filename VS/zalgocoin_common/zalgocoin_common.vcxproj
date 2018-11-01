@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9AD137B9-5DD3-4C8D-B318-50912B9B4E69}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>zalgocoincommon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="..\localprojects.props" />
   <ItemGroup>
     <ClCompile Include="..\..\src\activemasternode.cpp" />
     <ClCompile Include="..\..\src\addrdb.cpp" />
@@ -30,16 +39,7 @@
     <ClCompile Include="..\..\src\blockencodings.cpp" />
     <ClCompile Include="..\..\src\bloom.cpp" />
     <ClCompile Include="..\..\src\chain.cpp" />
-    <ClCompile Include="..\..\src\chainparams.cpp">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </CompileAs>
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      </CompileAs>
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      </CompileAs>
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      </CompileAs>
-    </ClCompile>
+    <ClCompile Include="..\..\src\chainparams.cpp" />
     <ClCompile Include="..\..\src\chainparamsbase.cpp" />
     <ClCompile Include="..\..\src\checkpoints.cpp" />
     <ClCompile Include="..\..\src\clientversion.cpp" />
@@ -192,6 +192,9 @@
     <ClInclude Include="..\..\src\clientversion.h" />
     <ClInclude Include="..\..\src\coins.h" />
     <ClInclude Include="..\..\src\compat.h" />
+    <ClInclude Include="..\..\src\compat\byteswap.h" />
+    <ClInclude Include="..\..\src\compat\endian.h" />
+    <ClInclude Include="..\..\src\compat\sanity.h" />
     <ClInclude Include="..\..\src\compressor.h" />
     <ClInclude Include="..\..\src\core_io.h" />
     <ClInclude Include="..\..\src\core_memusage.h" />
@@ -274,66 +277,23 @@
     <ClInclude Include="..\..\src\zmq\zmqnotificationinterface.h" />
     <ClInclude Include="..\..\src\zmq\zmqpublishnotifier.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\berkeleyDB\berkeleyDB.vcxproj">
-      <Project>{93c68c47-adc1-481a-b5fa-996996a4302c}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\leveldb\leveldb.vcxproj">
-      <Project>{9b9c0f18-c01d-482f-a665-6d638160b2f3}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\libevent\libevent.vcxproj">
-      <Project>{d01d4e4b-c4cc-4767-b0d9-fc31f7fa0d90}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\libminiupnpc\libminiupnpc.vcxproj">
-      <Project>{e67b1b07-7710-4c82-bcf2-ea482c1dbd48}</Project>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-    <ProjectReference Include="..\openssl\openssl_2017.vcxproj">
-      <Project>{b9f644c2-f9de-4648-b613-43755d81ea3b}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\univalue\univalue.vcxproj">
-      <Project>{10fcc8bd-660d-4227-8987-3ae2b0ed95e9}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\zlib\zlib_2017.vcxproj">
-      <Project>{dfbbe42a-45f4-4188-89c2-17f5dfe50673}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\zmq\zmq_2017.vcxproj">
-      <Project>{17ab24a7-9fab-4f6f-b411-01c9ff54e22d}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{9AD137B9-5DD3-4C8D-B318-50912B9B4E69}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
-    <RootNamespace>zalgocoincommon</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -363,7 +323,6 @@
     <Linkage-grpc_dependencies_zlib>static</Linkage-grpc_dependencies_zlib>
     <CallingConvention-grpc_dependencies_zlib>stdcall</CallingConvention-grpc_dependencies_zlib>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(OutDir)obj\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -374,7 +333,6 @@
     <Linkage-grpc_dependencies_openssl>static</Linkage-grpc_dependencies_openssl>
     <Linkage-grpc_dependencies_zlib>static</Linkage-grpc_dependencies_zlib>
     <CallingConvention-grpc_dependencies_zlib>stdcall</CallingConvention-grpc_dependencies_zlib>
-    <IntDir>$(OutDir)obj\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -386,7 +344,6 @@
     <Linkage-grpc_dependencies_zlib>static</Linkage-grpc_dependencies_zlib>
     <CallingConvention-grpc_dependencies_zlib>stdcall</CallingConvention-grpc_dependencies_zlib>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(OutDir)obj\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -397,7 +354,6 @@
     <Linkage-grpc_dependencies_openssl>static</Linkage-grpc_dependencies_openssl>
     <Linkage-grpc_dependencies_zlib>static</Linkage-grpc_dependencies_zlib>
     <CallingConvention-grpc_dependencies_zlib>stdcall</CallingConvention-grpc_dependencies_zlib>
-    <IntDir>$(OutDir)obj\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -405,11 +361,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;WIN32;ssize_t=int;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MINIUPNP_STATICLIB;HAVE_CONFIG_H;_WIN32;_LIB;ssize_t=int;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <ForcedIncludeFiles>$(SolutionDir)config\zalgocoin-config.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
-      <ObjectFileName>$(IntDir)VS\$(ProjectName)\%(RelativeDir)</ObjectFileName>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
@@ -424,12 +379,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;WIN32;ssize_t=long long;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MINIUPNP_STATICLIB;HAVE_CONFIG_H;_WIN32;_LIB;ssize_t=long long;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <ForcedIncludeFiles>$(SolutionDir)config\zalgocoin-config.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
-      <ObjectFileName>$(IntDir)VS\$(ProjectName)\%(RelativeDir)</ObjectFileName>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
@@ -445,11 +398,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;WIN32;ssize_t=int;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MINIUPNP_STATICLIB;HAVE_CONFIG_H;_WIN32;_LIB;_UNICODE;UNICODE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;WIN32;ssize_t=int</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <ForcedIncludeFiles>$(SolutionDir)config\zalgocoin-config.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
-      <ObjectFileName>$(IntDir)VS\$(ProjectName)\%(RelativeDir)</ObjectFileName>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -467,11 +419,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;WIN32;ssize_t=long long;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MINIUPNP_STATICLIB;HAVE_CONFIG_H;_WIN32;_LIB;_UNICODE;UNICODE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;WIN32;ssize_t=long long</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <ForcedIncludeFiles>$(SolutionDir)config\zalgocoin-config.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
-      <ObjectFileName>$(IntDir)VS\$(ProjectName)\%(RelativeDir)</ObjectFileName>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>

@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="google\protobuf\compiler\code_generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\command_line_interface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\plugin.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\plugin.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\subprocess.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\zip_writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_enum.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_enum_field.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_extension.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_field.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_file.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_generator.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_helpers.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_map_field.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_message.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_message_field.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_padding_optimizer.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_primitive_field.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_service.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\cpp\cpp_string_field.cc">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_doc_comment.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_enum.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_enum_field.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_field_base.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_generator.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_helpers.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_map_field.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_message.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_message_field.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_primitive_field.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_reflection_class.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_repeated_enum_field.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_repeated_message_field.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_repeated_primitive_field.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_source_generator_base.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\csharp\csharp_wrapper_field.cc">
+      <Filter>Source Files\csharp</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_context.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_doc_comment.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_enum.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_enum_field.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_enum_field_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_enum_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_extension.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_extension_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_field.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_file.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_generator.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_generator_factory.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_helpers.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_lazy_message_field.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_lazy_message_field_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_map_field.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_map_field_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_message.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_message_builder.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_message_builder_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_message_field.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_message_field_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_message_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_name_resolver.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_primitive_field.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_primitive_field_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_service.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_shared_code_generator.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_string_field.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\java\java_string_field_lite.cc">
+      <Filter>Source Files\java</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\js\js_generator.cc">
+      <Filter>Source Files\js</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_enum.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_enum_field.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_extension.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_field.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_file.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_generator.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_helpers.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_map_field.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_message.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_message_field.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_oneof.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\objectivec\objectivec_primitive_field.cc">
+      <Filter>Source Files\objectivec</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\php\php_generator.cc">
+      <Filter>Source Files\php</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\ruby\ruby_generator.cc">
+      <Filter>Source Files\ruby</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\python\python_generator.cc">
+      <Filter>Source Files\python</Filter>
+    </ClCompile>
+    <ClCompile Include="google\protobuf\compiler\js\well_known_types_embed.cc">
+      <Filter>Source Files\js</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="google\protobuf\compiler\subprocess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\zip_writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_enum.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_enum_field.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_extension.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_field.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_file.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_helpers.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_map_field.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_message.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_message_field.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_message_layout_helper.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_options.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_padding_optimizer.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_primitive_field.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_service.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\cpp\cpp_string_field.h">
+      <Filter>Header Files\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_doc_comment.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_enum.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_enum_field.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_field_base.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_helpers.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_map_field.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_message.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_message_field.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_options.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_primitive_field.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_reflection_class.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_repeated_enum_field.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_repeated_message_field.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_repeated_primitive_field.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_source_generator_base.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\csharp\csharp_wrapper_field.h">
+      <Filter>Header Files\csharp</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_context.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_doc_comment.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_enum.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_enum_field.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_enum_field_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_enum_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_extension.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_extension_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_field.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_file.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_generator_factory.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_helpers.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_lazy_message_field.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_lazy_message_field_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_map_field.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_map_field_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_message.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_message_builder.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_message_builder_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_message_field.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_message_field_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_message_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_name_resolver.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_options.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_primitive_field.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_primitive_field_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_service.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_shared_code_generator.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_string_field.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\java\java_string_field_lite.h">
+      <Filter>Header Files\java</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_enum.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_enum_field.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_extension.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_field.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_file.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_helpers.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_map_field.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_message.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_message_field.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_oneof.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+    <ClInclude Include="google\protobuf\compiler\objectivec\objectivec_primitive_field.h">
+      <Filter>Header Files\objectivec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{95d0174b-12ca-4aea-9949-33f0c147f57c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{60ce5f0d-aa07-4a64-a563-d900edc3d055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\java">
+      <UniqueIdentifier>{45797ad5-e088-419d-9c7e-3c737c06b2f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cpp">
+      <UniqueIdentifier>{b9040e45-25bc-40b7-84e9-04440c32f3aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\csharp">
+      <UniqueIdentifier>{665910f7-6353-4a43-b38e-2898d49ef039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\objectivec">
+      <UniqueIdentifier>{4b646c34-8349-4e98-8673-7ea40c6f93bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpp">
+      <UniqueIdentifier>{36044cb1-698c-43c7-9d47-7844180fcacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\csharp">
+      <UniqueIdentifier>{b0fbe766-c529-46cf-947d-c49c9cf1bae5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\java">
+      <UniqueIdentifier>{bc1bad01-9855-43fb-9b86-75d2d6d8f39e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\js">
+      <UniqueIdentifier>{882ae723-920d-45f5-a80c-868895ab3e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objectivec">
+      <UniqueIdentifier>{50b71220-68e1-4d0a-baad-43c2f74ffb95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\php">
+      <UniqueIdentifier>{72a2dc6b-09e5-474b-92d7-15d7f1e06152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\python">
+      <UniqueIdentifier>{9a6cd9d9-95cc-4cc8-a451-395074d67ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ruby">
+      <UniqueIdentifier>{e1562fc1-74ba-4b4b-95d7-aace898a44bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files\locale">
+      <UniqueIdentifier>{5f1679e4-4051-4be1-a667-08253e21f9e4}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="Resource Files\res">
+      <UniqueIdentifier>{3398a68c-7fb2-4b6b-89db-40bc7ad647c5}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="Resource Files\res\icons">
+      <UniqueIdentifier>{a6a9485b-0039-45c3-87db-dac17adb41e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\icons\drkblue">
+      <UniqueIdentifier>{d8015029-0989-4f39-b977-9fd589b1f663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\icons\crownium">
+      <UniqueIdentifier>{7e31a789-750e-4554-8c54-5d641ce3d044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\icons\light">
+      <UniqueIdentifier>{3af4cd65-0218-42ef-9e20-c65bbe609cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\icons\light-retro">
+      <UniqueIdentifier>{407fd4aa-2322-467f-b1d4-877821c9a72a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\icons\trad">
+      <UniqueIdentifier>{7b2e45c4-69c7-4557-8979-2052e333f05b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\images">
+      <UniqueIdentifier>{824f6158-3d21-448c-94c1-3b7058cf9267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\images\drkblue">
+      <UniqueIdentifier>{392966e0-cd1b-4e3d-9d17-b1488e1f6e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\images\crownium">
+      <UniqueIdentifier>{6787240c-fbcb-46c3-b8b9-ecd0c0d0e6e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\images\light">
+      <UniqueIdentifier>{38db3bfe-c6fc-41ec-961c-d63af77e72ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\images\light-retro">
+      <UniqueIdentifier>{8f8c0edb-75f4-44ca-816c-a66a358f40d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\images\trad">
+      <UniqueIdentifier>{74dc7a69-2288-4af8-bad3-e822529ed25b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\css">
+      <UniqueIdentifier>{6e083252-36ba-4faa-82cf-4b1c1018f4d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\res\movies">
+      <UniqueIdentifier>{18fd2fc3-af7f-4614-ac8b-eaf2143f54e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\src\qt\bitcoinamountfield.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\intro.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\overviewpage.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\rpcconsole.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\zalgocoin.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\addressbookpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\addresstablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\askpassphrasedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\bantablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\bitcoinaddressvalidator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\bitcoinamountfield.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\bitcoingui.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\bitcoinunits.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\clientmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\coincontroldialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\coincontroltreewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\csvmodelwriter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\darksendconfig.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\editaddressdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\guiutil.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\intro.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\macdockiconhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\macnotificationhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\masternodelist.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\modaloverlay.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\notificator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\openuridialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\optionsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\optionsmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\overviewpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\paymentserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\peertablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\qrdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\qvalidatedlineedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\qvaluecombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\receivecoinsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\receiverequestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\recentrequeststablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\rpcconsole.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\sendcoinsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\sendcoinsentry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\signverifymessagedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\splashscreen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\trafficgraphwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\transactiondesc.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\transactiondescdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\transactionfilterproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\transactiontablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\transactionview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\utilitydialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\walletframe.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\walletmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\src\qt\walletview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\..\src\qt\zalgocoin_locale.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="..\..\src\qt\zalgocoin.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\qt\res\css\crownium.css">
+      <Filter>Resource Files\res\css</Filter>
+    </None>
+    <None Include="..\..\src\qt\res\css\drkblue.css">
+      <Filter>Resource Files\res\css</Filter>
+    </None>
+    <None Include="..\..\src\qt\res\css\light.css">
+      <Filter>Resource Files\res\css</Filter>
+    </None>
+    <None Include="..\..\src\qt\res\css\light-hires.css">
+      <Filter>Resource Files\res\css</Filter>
+    </None>
+    <None Include="..\..\src\qt\res\css\light-hires-retro.css">
+      <Filter>Resource Files\res\css</Filter>
+    </None>
+    <None Include="..\..\src\qt\res\css\light-retro.css">
+      <Filter>Resource Files\res\css</Filter>
+    </None>
+    <None Include="..\..\src\qt\res\css\trad.css">
+      <Filter>Resource Files\res\css</Filter>
+    </None>
+    <None Include="packages.config" />
+    <None Include="..\..\src\qt\locale\zalgocoin_bg.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_de.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_es.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_fi.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_fr.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_it.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_ja.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_nl.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_pl.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_pt.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_ru.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_sk.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_sv.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_vi.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_zh_CN.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_zh_TW.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_bg.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_de.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_en.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_es.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_fi.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_fr.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_it.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_ja.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_nl.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_pl.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_pt.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_ru.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_sk.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_sv.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_vi.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_zh_CN.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+    <None Include="..\..\src\qt\locale\zalgocoin_zh_TW.qm">
+      <Filter>Resource Files\locale</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\qt\addressbookpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\addresstablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\askpassphrasedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\bantablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\bitcoinaddressvalidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\bitcoingui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\bitcoinunits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\clientmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\coincontroldialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\coincontroltreewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\csvmodelwriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\darksendconfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\editaddressdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\guiutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\masternodelist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\modaloverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\networkstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\notificator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\openuridialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\optionsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\optionsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\paymentrequestplus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\paymentserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\peertablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\platformstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\qrdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\qvalidatedlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\qvaluecombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\receivecoinsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\receiverequestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\recentrequeststablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\sendcoinsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\sendcoinsentry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\signverifymessagedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\splashscreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\trafficgraphdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\trafficgraphwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\transactiondesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\transactiondescdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\transactionfilterproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\transactionrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\transactiontablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\transactionview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\utilitydialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\walletframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\walletmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\walletmodeltransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\walletview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\winshutdownmonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\zalgocoinstrings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\qt\paymentrequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\src\qt\res\icons\drkblue\about.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\about.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\about.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\about.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\about.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\about.png">
+      <Filter>Resource Files\res\images\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\about.png">
+      <Filter>Resource Files\res\images\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\about.png">
+      <Filter>Resource Files\res\images\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\about.png">
+      <Filter>Resource Files\res\images\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\about.png">
+      <Filter>Resource Files\res\images\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\about_qt.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\about_qt.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\about_qt.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\about_qt.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\about_qt.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\bitcoin.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\address-book.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\add.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\address-book.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\add.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\address-book.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\add.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\address-book.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\add.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\add.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\address-book.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\browse.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\browse.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\browse.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\browse.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\browse.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\connect0_16.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\configure.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\clock5.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\clock4.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\clock3.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\clock2.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\clock1.png">
+      <Filter>Resource Files\res\icons\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\checked.png">
+      <Filter>Resource Files\res\images\drkblue</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\checked.png">
+      <Filter>Resource Files\res\images\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\checked.png">
+      <Filter>Resource Files\res\images\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\checked.png">
+      <Filter>Resource Files\res\images\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\chevron.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\clock1.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\clock2.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\clock3.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\clock4.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\clock5.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\clock1.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\clock2.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\clock3.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\clock4.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\clock5.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\clock1.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\clock2.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\clock3.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\clock4.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\clock5.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\clock5.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\clock1.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\clock2.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\clock3.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\clock4.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\configure.png">
+      <Filter>Resource Files\res\icons\crownium</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\configure.png">
+      <Filter>Resource Files\res\icons\light</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\configure.png">
+      <Filter>Resource Files\res\icons\light-retro</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\configure.png">
+      <Filter>Resource Files\res\icons\trad</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\connect4_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\connect0_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\connect0_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\connect0_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\connect0_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\connect1_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\connect1_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\connect1_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\connect1_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\connect1_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\connect2_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\connect2_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\connect2_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\connect2_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\connect2_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\connect3_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\connect3_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\connect3_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\connect3_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\connect3_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\connect4_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\connect4_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\connect4_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\connect4_16.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\drkblue_address-book.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\debugwindow.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\debugwindow.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\debugwindow.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\debugwindow.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\debugwindow.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\drkblue_address-book.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\drkblue_address-book.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\drkblue_address-book.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\drkblue_address-book.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\drkblue_editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\drkblue_editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\drkblue_editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\drkblue_editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\drkblue_editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\drkblue_editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\drkblue_editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\drkblue_editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\drkblue_editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\drkblue_editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\drkblue_downArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\drkblue_downArrow.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\drkblue_downArrow.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\drkblue_downArrow.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\drkblue_downArrow.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\drkblue_downArrow.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\drkblue_downArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\drkblue_downArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\drkblue_downArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\drkblue_downArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\drkblue_qtreeview_selected.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\drkblue_leftArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\drkblue_leftArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\drkblue_leftArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\drkblue_leftArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\drkblue_leftArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\drkblue_qtreeview_selected.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\drkblue_qtreeview_selected.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\drkblue_qtreeview_selected.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\drkblue_qtreeview_selected.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\drkblue_rightArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\drkblue_rightArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\drkblue_rightArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\drkblue_rightArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\drkblue_rightArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\drkblue_upArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\drkblue_upArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\drkblue_upArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\drkblue_upArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\drkblue_upArrow_small.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\drkblue_walletFrame_bg.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\drkblue_walletFrame_bg.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\drkblue_walletFrame_bg.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\drkblue_walletFrame_bg.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\drkblue_walletFrame_bg.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\send.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\drkblue_remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\drkblue_remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\drkblue_remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\drkblue_remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\drkblue_remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\edit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\edit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\edit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\edit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\edit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\editcopy.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\editpaste.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\export.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\export.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\export.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\export.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\export.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\eye.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\eye.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\eye.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\eye.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\eye.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\eye_minus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\eye_minus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\eye_minus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\eye_minus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\eye_minus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\eye_plus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\eye_plus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\eye_plus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\eye_plus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\eye_plus.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\filesave.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\filesave.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\filesave.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\filesave.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\filesave.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\fontbigger.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\fontbigger.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\fontbigger.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\fontbigger.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\fontbigger.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\fontsmaller.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\fontsmaller.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\fontsmaller.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\fontsmaller.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\fontsmaller.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\hd_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\hd_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\hd_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\hd_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\hd_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\hd_enabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\hd_enabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\hd_enabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\hd_enabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\hd_enabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\history.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\history.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\history.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\history.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\history.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\key.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\key.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\key.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\key.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\key.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\lock_closed.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\lock_closed.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\lock_closed.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\lock_closed.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\lock_closed.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\lock_open.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\lock_open.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\lock_open.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\lock_open.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\lock_open.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\masternodes.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\masternodes.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\masternodes.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\masternodes.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\masternodes.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\network_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\network_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\network_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\network_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\network_disabled.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\overview.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\overview.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\overview.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\overview.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\overview.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\quit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\quit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\quit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\quit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\quit.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\receive.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\receive.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\receive.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\receive.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\receive.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\remove.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\send.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\send.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\send.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\send.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-035.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-000.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-001.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-002.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-003.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-004.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-005.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-006.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-007.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-008.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-009.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-010.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-011.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-012.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-013.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-014.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-015.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-016.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-017.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-018.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-019.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-020.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-021.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-022.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-023.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-024.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-025.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-026.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-027.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-028.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-029.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-030.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-031.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-032.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-033.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\movies\spinner-034.png">
+      <Filter>Resource Files\res\movies</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\splash_testnet.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\splash.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\splash.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\splash.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\splash.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\splash.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\splash_testnet.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\splash_testnet.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\splash_testnet.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\splash_testnet.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\unchecked.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\unchecked.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\unchecked.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\unchecked.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\trad\zalgocoin_logo_horizontal.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\drkblue\zalgocoin_logo_horizontal.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\crownium\zalgocoin_logo_horizontal.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light\zalgocoin_logo_horizontal.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\images\light-retro\zalgocoin_logo_horizontal.png">
+      <Filter>Resource Files\res\images</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\synced.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\synced.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\synced.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\synced.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\synced.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\transaction_abandoned.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\transaction_abandoned.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\transaction_abandoned.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\transaction_abandoned.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\transaction_abandoned.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\transaction_conflicted.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\transaction_conflicted.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\transaction_conflicted.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\transaction_conflicted.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\transaction_conflicted.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\transaction0.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\transaction0.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\transaction0.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\transaction0.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\transaction0.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\transaction2.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\transaction2.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\transaction2.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\transaction2.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\transaction2.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\tx_inout.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\tx_inout.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\tx_inout.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\tx_inout.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\tx_inout.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\tx_input.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\tx_input.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\tx_input.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\tx_input.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\tx_input.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\tx_mined.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\tx_mined.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\tx_mined.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\tx_mined.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\tx_mined.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\tx_output.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\tx_output.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\tx_output.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\tx_output.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\tx_output.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\drkblue\verify.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\crownium\verify.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light\verify.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\light-retro\verify.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\trad\verify.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+    <Image Include="..\..\src\qt\res\icons\warning.png">
+      <Filter>Resource Files\res\icons</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\qt\guiconstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qt\networkstyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qt\paymentrequestplus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qt\platformstyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qt\trafficgraphdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qt\transactionrecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qt\walletmodeltransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qt\winshutdownmonitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\qt\paymentrequest.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="..\..\src\qt\forms\addressbookpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\askpassphrasedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\coincontroldialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\darksendconfig.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\debugwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\editaddressdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\helpmessagedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\intro.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\masternodelist.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\modaloverlay.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\openuridialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\optionsdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\overviewpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\qrdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\receivecoinsdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\receiverequestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\sendcoinsdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\sendcoinsentry.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\signverifymessagedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\..\src\qt\forms\transactiondescdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\qt\res\zalgocoin-qt-res.rc">
+      <Filter>Resource Files\res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

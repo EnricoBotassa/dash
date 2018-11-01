@@ -8,8 +8,6 @@
 #include "init.h"
 #include "util.h"
 
-#include <windows.h>
-
 #include <QDebug>
 
 #include <openssl/rand.h>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\bitstream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mask.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mmask.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mqrspec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcodelib.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qrenc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qrencode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qrinput.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qrspec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rscode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\split.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\bitstream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mask.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mmask.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mqrspec.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qrencode.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qrinput.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qrspec.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rscode.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\split.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="getopt.h" />
+    <ClInclude Include="config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{874a53cc-eca3-430a-b557-e002db9a6e51}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
